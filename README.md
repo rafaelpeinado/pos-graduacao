@@ -3,7 +3,9 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 
 ## Esalq
 ### Engenharia de Software
+#### Aulas
+* [Aula: User Experience (UX) I - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/palestra-blockchain-e-criptomoedas)
 #### Palestras
-* [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/palestra-blockchain-e-criptomoedas)
+* [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
 * [Palestra: Os desafios da arquitetura de software - Guilherme Bezerra de Lima](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/palestra-os-desafios-da-arquitetura-de-software)
 * [Palestra: Do Cockpit para o seu dia a dia - Fernando Colantuono](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/palestra-do-cockpit-para-o-seu-dia-a-dia)
