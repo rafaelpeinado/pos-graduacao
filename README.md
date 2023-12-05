@@ -101,7 +101,7 @@ Tornar o complexo claro. Wurman (1997)
 4. Um disciplina emergente e uma comunidade de prática focada em trazer princípios do design e da arquitetura para o espaço digital.
 
 Dimensões da UX: 
-* Usuário
+* **Usuário**
     * Audiências
     * Necessidades
     * Comportamentos
@@ -109,7 +109,7 @@ Dimensões da UX:
     * Emoções
     * Linguagens
 
-* Conteúdo
+* **Conteúdo**
     * Documentos
     * Volume
     * Formato
@@ -117,7 +117,7 @@ Dimensões da UX:
     * Governança
     * Atualização
 
-* Contexto
+* **Contexto**
     * Ambiente de uso
     * Dispositivos
     * Social
@@ -376,3 +376,375 @@ Associação entre ação e objeto
 
 ## Detalhes
 * Ferramentas usadas para representar telas e fluxogramas de UX: Figma para layout de telas e Miro para fluxos
+
+
+# User Experience (UX) II
+## Sistema de Navegação
+### O que é navegar?
+* Alcançar um destino que está fora do campo de visão do ponto de partida.
+* É um processo cognitivo onde o navegador identifica sua posição e seu destino em um mapa, traça uma rota ligando esses dois pontos e segue por essa rota no mundo físico identificando, de tempos em tempos, sua posição no mapa para corrigir eventuais desvios.
+**Obs.:** A Matrix é uma simulação do ambiente virtual (o paralelo que pode ser feito é com a interface gráfica) é o ambiente onde entramos e interagimos com objetos. Antes do advento da interface gráfica, nós poderíamos pensar nas tecnologias como próteses do nosso corpo, por exemplo, o carro é uma prótese da perna para poder andar mais rápido, a máquina de escrever é uma prótese da mão para poder escrever mais rápido, o binóculo é a prótese do olho para poder enxergar mais longe. A interface trouxe pela primeira vez a possibilidade de criar um ambiente virtual e usuário entra dentro do ambiente virtual com o mouse e começa a interagir com esse ambiente para realizar tarefas e realizar **navegação**. É traçado um caminho dentro desse ambiente para chegar no objetivo, pois toda vez que entramos em um ambiente, nós temos um objetivo. 
+
+### O que é sistema de navegação?
+* Componente do produto que especifica as maneiras de navegar, de se mover pelo seu espaço virtual e hipertextual. 
+* Sua função é indicar ao usuário sua localização e mostrar o caminho correto para encontrar as informações que necessita auxiliando-o a realizar suas tarefas.
+* Sem um sistema de navegação, o usuário não consegue chegar ao seu destino e, literalmente, se perde.
+
+#### Por que as pessoas se perdem ao navegar em uma interface?**
+* **Esquemas ou modelos de ambientes genéricos:** por exemplo, uma cidade de interior (no caso ele usa a cidade de Colina - SP) sempre terá uma praça, uma igreja em frente, uma agência dos Correios, Banco do Brasil, prédio da prefeitura etc. Esse exemplo demonstra que esse é um modelo de ambiente genérico. Ou seja, quando estamos em um ambiente novo, nós procuramos aprender a navegar com ambientes já conhecidos como referência. Ou, por exemplo, quem dirige em uma cidade litorânea nova, se baseia pelo mar. Os livros tem um sistema de navegação onde possui índice com a numeração, títulos etc. Em aplicativos temos alguns modelos para e-commerce, aplicativos de bancos etc. Isso se baseia na **consistência**.
+* **Mapas espaciais cognitivos:** por exemplo, decorar pontos de referências, memorizando rotas até que conseguimos andar por caminhos que nunca fizemos antes. Em interface gráfica precisamos fazer com que o usuário consiga memorizar esse mapa.
+
+#### As três perguntas do sistema de navegação
+* **Onde estou?** Por exemplo, estou no site do Bradesco em Fundos
+* **O que tem aqui?** Fundos
+* **Para onde posso ir?** O menu com as opções
+
+### Recomendações para o projeto do projeto do sistema de navegação
+#### Fácil de aprender
+Exemplo, são editores de texto VI que precisa fazer as formatações via comando, o que dificulta a experiência. E o Notepad++ que tem um menu com várias opções de formatação e basta fazer um clique, deixando a experiência mais fácil de aprender.
+
+#### Ter consistência
+Exemplo, vários anos do Microsoft Office Word e o menu se manteve o mesmo, exceto que após de 2007 houve algumas mudanças. A mudança do antigo para o novo não foi tão fácil, porque quebrou a consistência e teve que reaprender a usar o menu. Por exemplo, ninguém achava o menu **Arquivo** que virou um botão e na versão seguinte voltou a ser parecido com o clássico, um botão escrito "Arquivo".
+
+#### Apresentar feedback
+Exemplo, é um rádio antigo da Pioneer que era possível guardar frequências de rádio e todo o feedback era visual e a operação de trocar entre frequências de rádio era demorado. Ou seja, além de demorar e o feedback ser todo visual, era necessário tirar o olho da rua e olhar para o rádio. Visto o contexto do aplicativo, o feedback somente visual não tinha o melhor cenário. Por exemplo, o Waze usa flechas e letras grandes, além de ter a voz falando. Assim, conseguimos olhar rapidamente, sem precisar tirar tanta atenção do trânsito.
+
+#### Ser eficiente
+Exemplo, é uma tela do Itaú que precisava passar por nove telas para fazer cancelamento de uma aplicação que foi feita, **mas o ideal é que a pessoa alcance rapidamente o objetivo**.
+
+#### Ter rótulos claros
+Exemplo são as barras de menu do Facebook em 2019 e 2022. Em 2019 eram só ícones, já em 2022 estão mais claras e além de possuir os termos embaixo.
+
+#### Ter clareza visual
+Exemplo é o site do Cinemark em 2014 e parte de comprar ingresso não era muito clara e muito discreto. Atualmente, existe um botão bem grande dizendo **"COMPRE AQUI"**, porém ainda há uma falha, pois há uma informação na página que parece um botão e não é (**affordance** é o potencial de um objeto de ser usado como foi projetado para ser usado). Isso pode levar o usuário a ter dúvidas.
+
+#### Equilibrar flexibilidade e confusão
+**Flexibilidade**
+* Posso ir para qualquer lugar!
+* Permite que usuário vá rapidamente de um ponto a outro na interface.
+* Fornece muitos atalhos.
+
+**Confusão**
+* Para onde vou?
+* Muitas opções de navegação confundem o usuário.
+* Demora para escolher onde clicar.
+
+Exemplo, é o processo de compras do Magazine Luíza, onde a escolha do produto tem muitos links e opções (por exemplo, indicando produtos relacionados), mais flexibilidade e mais confusão. Por outro lado, na escolha da forma de pagamento os links e opções foram diminuídas e temos menos flexilidade e menos confusão, tendo botões bem claros do que precisa ser feito para não confundir o usuário na hora de fazer uma operação crítica (se o usuário não entender, ele vai sair do site e não finalizar a compra. Ele precisa de foco).
+
+##### Divulgação progressiva
+Primeiro mostra algumas funcionalidades, geralmente as mais utilizadas e dar a opção do usuário ver todas as funcionalidades. Por exemplo, o Word faz isso na opção de parágrafos e depois pode ir em uma janela onde estão todas as funcionalidades relacionadas a parágrafos.
+Essa é uma maneira de equilibrar flexibilidade com confusão.
+
+#### Suportar as necessidades e comportamentos do usuário
+É dado dois exemplos com um caminho tradicional de e-commerce. Uma vitrine de produtos, ao selecionar vai para a página de detalhes, página de carrinho e por último a tela de login e pagamento. O primeiro é o [SP Mundi](https://www.spmundi.com.br/), uma página de câmbio em que todo esse processo tradicional fica longo, pois geralmente as pessoas compram apenas uma moeda específica. Raro as vezes que a pessoa vai em mais de um país. Além disso, não precisa de uma página de detalhes explicando o que é o dólar, por exemplo. Hoje o site está muito mais simples.
+O outro exemplo é o [São Luiz Distribuidora](https://saoluizonline.ezoop.com.br/) um site de hortifrúti em que é necessário entrar na página de detalhes de todos os produtos. O ideal é ter um botão já na vitrine de produtos, pois quem compra hortifrúti já conhece os produtos e compra com frequência e não precisa ver os detalhes dos produto. 
+
+#### Alinhar-se com os objetivos do produto
+O que o produto quer destacar? A navegação tem que favorecer isso. Por exemplo, o Instagram é uma rede social de fotos e a foto tem que ser o destaque da navegação.
+
+#### Aproveitar os padrões de navegação da plataforma tecnológica
+Por exemplo, navegador tem o botão voltar e os dispositivos mobile tem o movimento de pinça. O ideal é usar essas ferramentas para a melhor experiência do usuário.
+
+#### Utilizar navegação social
+Recomendações para o usuário baseado em outras pessoas que fizeram o mesmo caminho.
+
+
+### Elementos do Sistema de Navegação
+#### Logo
+Papel de identificar onde está e link para a página inicial.
+
+#### Menu
+Existem dois tipos de menus: local e global.
+* **Global:** leva para as grandes áreas da interface e, normalmente, é o elemento que se repete em todas as páginas e por isso precisamos de mais cuidado com esse menu.
+* **Local:** Após clicar em um item de menu do menu Global, somos direcionados para uma página que é exibido o menu local, por exemplo, com os itens filhos. Por exemplo, a Kalunga, após clicar em Informática, temos os filhos Cartuchos e Towers, Monitores, Mouses s/ Fio etc.
+
+Temos menu horizontal, vertical, pull-down, em árvore, hambúrguer, contextual, pie.
+* **Horizontal:** geralmente está no topo da página e dá mais espaço para inserir um banner, por exemplo, mas a **desvantagem** é que o crescimento dele é muito limitado.
+* **Vertical:** geralmente localizado na lateral da página e acomoda melhor o crescimento da página o que facilita a adição de novas categorias, porém ocupa muito espaço da página. **Podemos criar menus retráteis para resolver o problema do espaço.**
+* **Pull-down:** Ocupa pouco espaço igual o menu horizontal e ao clicar no item pai, aparecem mais itens. É necessário prestar atenção aos nomes dados aos itens de menu, pois precisam ser diretos para que os usuários não precisem ficar procurando em item por item a ação desejada.
+* **Árvore:** quando há um caminho/estrutura hierárquica muito grande. Sendo assim, podemos abrindo esses níveis até chegar a página que interessa sem precisar ficar carregando as páginas pai.
+* **Hambúrguer:** o menu fica fechado e quando clicar exibe os itens de menu.
+* **Contextual:** quando seleciono um objeto ele exibe ações que podem ser feitas naquele objeto. Geralmente é um atalho para usuário mais avançados.
+* **Pie:** é o menu em pizza, porém é muito limitado o crescimento desse menu, mas é muito bom para interfaces que usam joystick.
+
+#### Bread crumb
+É o item de navegação que significa "caminho de migalhas", que mostra o caminho da página em que está até a página principal. Ajuda o usuário a memorizar o mapa do site. Além disso é clicável e usa-se como atalho.
+
+#### Passo a passo
+É o menu pelo qual mostra as etapas que são necessárias para realizar um processo. Sendo assim, ele alinha as expectativas do usuário. Ou seja, muitos passos podem assustar o usuário, pois pode indicar um processo muito demorado.
+
+#### Cross content
+Conteúdo relacionado ao conteúdo que o usuário está vendo. 
+
+#### Mapa do site
+É como um índice de um livro e serve de atalho para as áreas principais.
+Também é comum o mapa do site reduzido no rodapé, que ajuda na indexação do Google, além disso pode ajudar na visualização do usuário.
+
+#### Índice remissivo
+Lista de palavras chaves e quando clica ele redireciona para essas palavras chaves. Caiu em desuso, pois agora está sendo utilizado a **Busca com autosuggest**.
+
+### Posicionamento dos Elementos de Navegação
+Uma pesquisa de 2010 pergunta aos usuários onde eles esperavam encontrar alguns elementos de interface de e-commerce e o mapa de calor mostra:
+* **Menu principal:** parte superior e lateral esquerda
+* **Carrinho de compras:** parte superior direito
+* **Botão comprar:** parte direita do site (pois o botão pode estar ao lado ou abaixo da descrição do produto)
+* **Busca:** parte superior direita e pouca incidência na parte superior esquerda
+* **Login:** parte superior esquerda, meio ou direita, sendo mais comum na esquerda
+* **Link para página inicial:** parte superior esquerda
+
+### Bibliotecas de Componentes de Interface
+* **[UI Patterns](https://ui-patterns.com/)**
+* **[Pttrns](https://www.pttrns.com/)**
+* **[Welie Interaction Design Patterns](welie.com)***
+* **[UI Garage](https://uigarage.net/)**
+* **[Mobile Patterns](mobile-patterns.com)***
+* **[Mobbin](https://mobbin.com/)**
+* **[Games Inspiration](gamesinspiration.com)***
+* **[Design System Repo](https://designsystemsrepo.com/)**
+
+
+## Sistema de Busca
+### O que é o Sistema de Busca?
+Componente do produto que determina as perguntas que o usuário pode fazer (queries) e o conjunto de respostas que irá obter.
+
+### Quando implementar
+* Produtos com grande volume de conteúdo;
+* Produtos com muitas informações para consulta;
+* Produtos com conteúdo muito dinâmico e um histórico grande;
+* Sistemas corporativos formados por vários subsistemas descentralizados.
+
+### Quando não implementar
+* Quando há pouco volume de conteúdo;
+* para compensar um sistema de navegação ruim;
+* Caso os usuários não gostem ou não saibam usar a busca (por exemplo, sites infantis).
+
+### Comportamento do usuário ao utilizar a busca
+* **Múltiplas interações:** geralmente acontece em buscas mais complexas, por exemplo, um sistema médico em que um termo pode resultar em buscar outros termos. As vezes restringindo, as vezes mudando etc.
+* **Uso integrado dos sistemas dee busca e navegação:** o usuário busca, traz as respostas, o usuário clica no item e começa a navegar no site. Clica no texto, vai navegando e depois volta na busca novamente. Alternando isso várias vezes. Por exemplo, Spotify.
+
+### Interação básica com o sistema de busca
+              Interface   ->  Página de     ->    Detalhes do
+Usuário   ->  de busca    <-  resultados    <-    item encontrado
+
+É uma jornada com idas e vindas. Não é linear, o usuário vai e volta até encontrar o que é desejado.
+
+### Componentes do sistema de busca
+**Interface de busca** e **Página de resultados** são os componentes básicos.
+Além disso, existe **Página sem resultados** e o de **Ajuda**.
+
+### Recomendações para a interface de busca
+#### Ofereça suporte às perguntas e aos modos de busca que o usuário costuma fazer
+As caixas de busca reproduzem o que os usuários perguntariam ao atendente humano. Por exemplo, para uma atendente da Gol ela perguntaria o destino, a origem e a data que gostaríamos de viajar.
+
+#### Facilite a digitação de palavras chaves
+Ajuda a sair da página de pesquisas para a página de resultados. Por exemplo, a pesquisa do YouTube já faz um autocomplete ou uma sugestão de palavras.
+Ou pode usar ferramentas do dispositivo como GPS do iFood para achar restaurantes por perto, a câmera para ler QR Code para buscar alguma informação etc.
+
+#### Faça a caixa de busca grande
+Quanto maior for a caixa de buscas, mais o usuário digita, pois a caixa de busca indica que aceita mais caracteres. E quanto mais palavras o usuário digita, mais eficiente é a busca.
+
+#### Evite a busca avançada
+Deixe o usuário começar com buscas mais simples e use o conceito de **divulgação progressiva**, caso o usuário precise de algo mais específico ele pode procurar pela busca avançada. Porém, muitos campos podem confundir o usuário.
+
+
+### Recomendações para a interface de busca
+#### Facilite o acesso aos itens encontrados
+As informações que o usuário mais quer devem ser disponibilizadas na página de resultados.
+Por exemplo, na Catho a triagem de currículos para os recrutadores eram Experiência, Formação, Idioma, Resumo e porcentagem de compatibilidade da vaga. Sendo assim, esses são os dados exibidos.
+
+#### Ofereça filtros e sugestões para refinar os resultados
+Substitui a busca avançada e reduz os resultados para o usuário encontrar o que quer.
+
+#### Ordene os resultados
+Por data, ordem, valor etc, dependendo da demanda do case.
+
+#### Mostre a quantidade de itens encontrados
+Ajuda o usuário e decidir se vai filtrar mais ou vai fazer uma nova busca.
+
+#### Pagine os resultados
+Não paginar torna a interface mais lenta, pois demora para carregar.
+
+#### Faça a mesma busca em várias bases simultaneamente (federated search)
+Por exemplo, quando pesquisa por algum time no Google, ele exibe jogos do time, descrição, notícias, páginas etc, pois traz informações de vários banco de dados.
+
+#### Facilite a realização de uma nova busca
+Uma boa forma de fazer isso é manter o que o usuário digitou na barra de busca.
+
+#### Indexe apenas conteúdo útil
+Por exemplo, indexar a página da notícia e não a página de navegação, pois da página de navegação vai ser necessário clicar na notícia.
+
+#### Apresente a página de resultados rapidamente
+O tempo considerados ideal é em até 400ms ou 500ms, é uma das melhores produtividades. 
+Até 1 segundo o usuário considera rápido e de 1s a 10s é possível que o usuário se irrite e saia da página.
+
+
+### Recomendações para a página sem resultados
+#### Informe que não foram encontrados resultados
+De forma bem clara.
+
+#### Apresente dicas de como usar a busca
+Dicas pedindo para informar palavras diferentes para tentar ajudar o usuário.
+
+#### Facilite a realização de uma nova busca
+Manter a caixa de texto editável para que a pessoa possa buscar.
+
+#### Ofereça links para outros serviços e para a área de atendimento
+Por exemplo, Android e iOS estão dando sugestões de onde o app pode ser baixado, caso ele não seja encontrado.
+
+
+### Recomendações para a ajuda
+Explique na ajuda:
+* O que está sendo procurado
+* Como as perguntas podem ser formuladas
+* Quais são as opções para refinar a busca
+* O que fazer se a lista de resultados é muito grande
+* O que fazer se não foram obtidos resultados
+* O que fazer se os resultados não interessam
+
+O Google e o Bing tem um área de ajuda bem grande, por causa da complexidade deles.
+
+
+### Análise do Log da Busca
+Salvar as palavras que o usuário digita em um sistema de log
+Por exemplo:
+* Na Catho é possível digitar "Design de Interação" e os resultados retornados podem conter Design de Interação e Design Digital e Analista de Web Design.
+* No Mercado Livre foi digitado chapéu com x (xapéu) e mesmo assim foram retornados chapéu.
+Ao analisar o log podemos identificar e ter insights do que os usuários estão procurando, além de refinando e melhorando as buscas.
+
+
+## Heurísticas
+São princípios, regras, diretrizes e boas práticas de design.
+Elas traduzem o senso comum de um bom projeto e servem para avaliar a qualidade da experiência oferecida, facilitar a crítica durante o desenvolvimento, e prever a eficácia das soluções propostas.
+
+### Tipos de Heurísticas
+Pesquisar "nome do que quer fazer + heurística"
+#### Heurísticas Genéricas
+Tentam cercar todos os tipos de problemas que uma interface pode ter.
+São aplicáveis a grande maioria dos produtos e dispositivos.
+
+* [Dez heurísticas de Nielsen](https://www.nngroup.com/articles/ten-usability-heuristics/)
+* [Oito regras de ouro de Shneiderman](https://www.cs.umd.edu/users/ben/goldenrules.html)
+* [Heurística de Arquitetura de Informação de Abby Covert](https://abbycovert.com/2012/02/04/ia_heuristics)
+
+
+#### Heurísticas Específicas
+Apresentam recomendações para um tipo restrito de interface (Internet bankings, videogames, e-commerces etc) ou para devices (smartphones, desktops, terminais de autoatendimento etc)
+* [Heurísticas de Arquitetura de Informação Pervasiva de Resmini e Rosati (2011)](https://www.sciencedirect.com/book/9780123820945/pervasive-information-architecture)
+* [Heurísticas para avaliação de sistemas interativos cross-channel (2016)](https://proceedings.science/p/98077)
+* [Heurísticas de Jogabilidade para jogos de computador (2008)](https://repositorio.unicamp.br/acervo/detalhe/441109)
+* [Content Analysis Heuristics (2007)](https://boxesandarrows.com/content-analysis-heuristics/)
+* [E-commerce User Experience (2018)](https://www.nngroup.com/reports/ecommerce-user-experience)
+* [Baymard Institute Guidelines (2019)](https://baymard.com/)
+* [Diretrizes de Stanford para credibilidade na web (2002)](https://credibility.stanford.edu/guidelines/index.html)
+* [Design Social Interfaces (2014)](https://www.amazon.com.br/Designing-Social-Interfaces-Christian-Crumlish/dp/0596154925)
+
+
+### Dez Heurísticas de Nielsen
+1. **Visibilidade do estado do sistema (feedback)**
+   * A interface deve sempre manter os usuários informados sobre o que está acontecendo, com feedback adequado em tempo razoável
+2. **Equivalência entre o sistema e o mundo real (falar a linguagem do usuário)**
+   * O sistema deve falar a linguagem dos usuários, com palavras, frases, ícones e conceitos familiares, em vez de usar termos técnicos
+   * Siga as convenções do mundo real, trazendo informações de maneira natural e lógica conforme o modelo mental do usuário
+3. **Controle do usuário e liberdade (saídas claramente marcadas)**
+   * É comum os usuários escolherem ou executarem funções por engano dentro do sistema e necessitarem de "saídas de emergência" para abandonar essas situações indesejadas sem ter que passar por um caminho longo ou refazer a tarefa desde o início
+   * É o usuário que controla o sistema, por isto ele precisa, a qualquer momento, poder abortar ou desfazer uma operação e retornar ao estado anterior
+4. **Consistência e padrões**
+   * Consistência significa que as mesmas coisas funcionam do mesmo jeito e são apresentadas da mesma forma
+   * A consistência facilita o uso do produto, porque o usuário aproveita seu aprendizado anterior, minimiza sua necessidade de memorização e oferece previsibilidade das ações.
+5. **Prevenção de erros**
+   * Melhor do que boas mensagens de erro é um design cuidadoso que evita a ocorrência de erros
+   * Elimine as condições de erro ou apresente aos usuários uma opção de confirmação antes de executar uma ação
+   * Também vale apresentar opções de conserto direto e rápido
+6. **Reconhecer ao invés de relembrar (minimizar a carga de memória do usuário)**
+   * Utilize objetos, ações e opções de fácil entendimento cognitivo e deixe-os visíveis para minimizar a carga de memória do usuário
+   * Eles não deve ter que lembrar informações de uma parte do diálogo para outra
+   * As instruções para utilizar o sistema devem ser visíveis ou facilmente recuperáveis sempre que apropriado
+   * A interface deve mostrar os elementos de diálogo e permitir que o usuário faça suas escolhas sem a necessidade de lembrar um comando específico
+7. **Flexibilidade e eficiência de uso (atalhos)**
+   * Normalmente despercebidos pelos novatos, os atalhos ajudam a acelerar a interação dos usuários experientes de modo que a interface consegue proporcionar uma boa experiencia para ambos.
+   * Atalhos, como as teclas de função, o menu contextualizado e o botão “Voltar” entre outros servem para recuperar informações que estão em níveis mais profundos.
+   * Eles permitem que os usuários executem com maior velocidade as ações mais frequentes.
+8. **Auxiliar o usuário a reconhecer, diagnosticar e recuperar ações erradas (boas mensagens de erro)**
+   * As mensagens de erro devem ter uma linguagem simples (sem códigos) indicando com precisão o problema e sugerindo uma solução.
+   * Elas devem ajudar o usuário a entender e resolver o seu problema sem assustá-lo, culpá-lo ou intimidá-lo.
+9. **Ajuda e documentação**
+   * O ideal é que o produto seja tão fácil de usar, seja tão intuitivo, que não necessite de ajuda ou documentação.
+   * Mas se for necessária, a ajuda deve estar facilmente acessível, com informações fáceis de pesquisar e focada nas tarefas do usuário, com instruções passo a passo de como chegar ao objetivo, sem ser muito extensa
+10. **Estética e design minimalista**
+   * As interfaces não devem conter informações irrelevantes ou raramente necessária competindo em visibilidade e atenção com informações relevantes
+   * Por isto a interface deve apresentar exatamente a informação que o usuário precisa no momento, nem mais nem menos
+
+
+## Metodologia de Projeto UX
+IDEO promoveu o Design Thinking
+
+### O que compõe um projeto de UX?
+#### Pensamento criativo
+* Pensamento divergente
+  * Criar opções (brainstorm, dando ideia, dando soluções para o problema, desenhar)
+* Pensamento convergente
+  * Fazer escolhas, avaliar alternativas
+
+Ou seja, o pensamento criativo é a junção das duas coisas, primeiro temos ideias divergentes e depois convergentes
+
+#### O modelo de processo criativo "Double Diamond"
+* **Descobrir:** a partir de um problema
+* **Definir:** Definição do problema e design brief
+* **Desenvolver:** quando entende o problema, começa a pensar em soluções
+* **Entregar:** a solução
+
+#### Processo de Design Thinking
+* **Empatizar:** ir a campo para entender o contexto e a pessoa
+* **Definir:** o problema
+* **Idealizar:** pensar em soluções
+* **Prototipar:** criar soluções iniciais
+* **Testar:** testar a solução criada
+
+#### Valores do Design Thinking
+* **Empatia:** se colocar no lugar do usuário e trazer a pessoa para participar do processo e projeto
+* **Colaboração:** apenas uma pessoa não vai trazer uma solução perfeita, é necessário colaboração. Por exemplo, em um projeto é importante que todas as áreas trabalhem juntas (jurídico, desenvolvedor, design etc)
+* **Prototipação:** colocar em prática para testar a solução desenhada
+
+#### Design Squiggle (Newman, 2018)
+* **Pesquisa e síntese:** ruído/incerteza
+* **Conceito/protótipo:** padrões/insights
+* **Design:** clareza/foco
+
+
+#### Design centrado no usuário
+##### Visão da Interação Humano-Computador
+* Focar desde o início do projeto no usuário e nas suas tarefas
+* Avaliar e medir o uso do produto
+* Design iterativo (prototipar) e interativo (com o usuário)
+
+**Obs.:** Iterativo se refere a ciclo, repetição. Uma Iteração é um ciclo ou uma etapa de uma rotina maior. Já Interativo, se refere a relacionamento, comunicação. Uma interação é uma ação mútua, uma entidade agindo sobre a outra ou vice-versa.
+
+
+##### Visão da Ciência da Informação
+* A informação é algo construído pelos seres humanos através dos seus processos cognitivos internos
+* Considera os usuários seres livre e ativos que estão construindo significado para as informações que encontram
+* Busca compreender como as pessoas constroem sentido e formar uma visão holística das suas experiências
+* Foca no usuário, em entender suas situações particulares de uso de informação e no que ocorre antes, durante e depois das suas interações com o sistema
+* Formula perguntas que nascem dos usuários, da visão que eles têm do sistema de informação e de como e porque eles o utilizam
+* Utiliza técnicas qualitativas de pesquisa
+
+
+#### Princípios para uma metodologia de projeto de UX
+Projetos de UX possuem cinco fases distintas, que forma uma processo de design cíclico.
+1. **Pesquisa:** pesquisar sobre usuário, contexto, empresa etc
+2. **Concepção:** tendo ideias
+3. **Especificação:** detalhando o objeto a ser construído
+4. **Implementação:** produto a ser desenvolvido, acompanhar esse desenvolvimento e testar se foi construído conforme planejado
+5. **Avaliação:** avaliar o processo de trabalho (lições aprendidas e retrospectiva), métricas do produto
+
+E o ciclo vai repetindo... pesquisa, concepção, especificação, implementação, avaliação, pesquisa...
+
+* Aplicar na fase de pesquisa os fundamentos e técnicas das abordagens de Design Centrado no Usuário da Ciência da Informação para criar uma visão holística do usuário e compreender suas situações de uso, incluindo o antes, o durante e o depois das interações com o produto.
+* Aplicar na fase de concepção os fundamentos e técnicas do Design Centrado no Usuário da Interação Humano-Computador para focalizar no usuário e nas suas tarefas desde o início do projeto, aplicar medidas empíricas da usabilidade e utilizar um processo de design iterativo e interativo com refinamentos sucessivos
+
+
+## Recomendações e Detalhes
+* **Cursos:** [Mergo](https://www.mergo.com.br/)
+* **Livros:** [Design de Navegação Web](https://www.amazon.com.br/Design-Navega%C3%A7%C3%A3o-Otimizando-Experi%C3%AAncia-Usu%C3%A1rio/dp/8577804917) e Nielsen.
+* **Filme:** [A Máquina do Tempo](https://www.adorocinema.com/filmes/filme-29207/)
+* Teclado ambíguo: é o teclado que tem dois números igual a do Itaú
