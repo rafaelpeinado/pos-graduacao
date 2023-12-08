@@ -4,7 +4,8 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 ## Esalq
 ### Engenharia de Software
 #### Aulas
-* [Aula: User Experience (UX) I - Guilhermo Almeida dos Reis](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
+* [Aula: User Experience (UX) - Guilhermo Almeida dos Reis](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
+* [Aula: Métodos Ágeis - Gino Terentim Junior](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/metodos-ageis)
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
 * [Palestra: Os desafios da arquitetura de software - Guilherme Bezerra de Lima](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/palestra-os-desafios-da-arquitetura-de-software)
