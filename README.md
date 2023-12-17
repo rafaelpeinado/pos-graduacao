@@ -203,3 +203,79 @@ A forma mais comum de cair no Caos tem limite com o Claro, pois havia uma melhor
 * [Simulação de Monte Carlo](https://www.ibm.com/br-pt/topics/monte-carlo-simulation)
 * **Cynefin:** quantidade de funcionário por modelo de trabalho é baseado em um estudo do [Robin Dunbar](https://www.theguardian.com/books/2021/feb/21/friends-by-robin-dunbar-review-how-important-are-your-pals) respondendo a quantidade de amigos que dá para manter e o tamanho máximo de um grupo.
   * **Complexo:** Miles Davis nome importante do Jazz e [Herbie Hancock](https://www.youtube.com/watch?v=FL4LxrN-iyw) (pianista): no jazz não havia um ensaio ou uma partitura. 
+
+
+# Métodos Ágeis II
+* Os métodos ágeis estão no Product X Market Fit para que uma boa solução feita no Problem x Solution Fit pule direto para a etapa Scale e não funcione, porque as pessoas, mercado e empresas não estavam preparados para a mudança de comportamento.
+* Product x Market Fit é encontrar uma solução que as pessoas realmente queiram
+
+## O que é inovação?
+Inovação não é mais uma coisa, um produto. Inovação é uma ideia, prática ou objeto que é percebido como novo por um indivíduo ou outro unidade de adoção. Pouco importa, do ponto de vista humana é objetivamente nova ou não, desde que ela foi descoberta ou usada pela primeira vez. Se a ideia parece nova para um indivíduo, ela é inovação.
+
+Inovação não é um processo tecnológico, é social. Uma inovação não depende apenas da qualidade da ideia.
+
+Em um grupo, para determinado assunto teremos
+* 2,5% de inovadores
+* 13,5% de primeiros adeptos: visionários e são capazes de gerar a prova social, tem características peculiares e são influenciadores daquela comunidade/grupo
+* 34% de maioria inicial: estão interessados na mudança, mas não quer assumir o risco agora. Tem características e necessidades muito específicas e precisam da prova social do grupo anterior
+* 34% de maioria final 
+* 16% de retardatários
+
+As mudanças precisam ser feitas por nichos
+
+
+## Planning Onion
+Visão (Problem x Solution Fit (antes do projeto)) -> Roadmap -> Release -> Sprint -> Backlog
+* Visão (Problem x Solution Fit (antes do projeto)): quando adquirimos uma visão para um produto, temos a ideia para resolver um problema
+* Roadmap (Após Problem x Solution Fit (antes do projeto)): sabemos onde queremos chegar, só não sei o caminho e é construído por etapas.
+* Release (Durante o projeto, buscando Product x Market Fit): é hora de testar e ver se está na direção certa ou não 
+* Sprint (Durante as Releases (Lançamentos)): prepara as direções pouco a pouco
+* Backlog (Lista de intenções)
+
+
+### Conceitos do Scrum
+**FÓRMULA DO ELEVATOR PITCH**
+para o(a) [público alvo]
+que tem [necessidade do público-alvo],
+o(a) [nome do produto]
+é um(a) [categoria de mercado]
+que [benefício principal].
+ao contrário do(a) [concorrentes(s)],
+o produto [diferencial do produto].
+
+
+#### Sobre o roadmap
+* Data (a data (ou período) do lançamento): quando estará disponível?
+* Nome (o nome da versão publicada): qual o nome da versão?
+* Meta (o motivo para criar a nova versão): por que estamos fazendo isso?
+* Requisitos (características de alto nível necessárias para atingir o objetivo): quais são as principais funções?
+* Métricas (as métricas para determinar se o objetivo foi atingido): como saberemos que a meta foi alcançada?
+
+Obs.: Método MoSCoW:
+* Must have: sem isso o produto é inviável
+* Should have: é de extrema importância
+* Could have: é desejável
+* Won't have: seria legal ter, mas não faremos agora
+
+
+##### Conceitos Scrum
+O backlog do produto deve ser D.E.E.P.
+* Detalhado no nível certo
+* Estimado adequadamente
+* Emergente: evolui com o tempo
+* Priorizado!
+
+
+
+
+
+
+
+## Recomendações e observações
+* [Livro Diffusion of Innovations](https://a.co/d/dQHQ8Pk)
+* [Livro Social Network Analysis](https://a.co/d/9ECXJD0)
+* [Livro Inside the Tornado](https://a.co/d/4rOTpBF)
+* **[Livro Crossing the Chasm](https://a.co/d/1gqtiZq)**
+* [Livro Dealing with Darwin](https://a.co/d/1VoUwXu)
+* [Livro Teoria de Campo em Ciência Social](https://amenteemaravilhosa.com.br/teoria-de-campo-de-kurt-lewin/)
+* [Livro Sensemaking in Organizations](https://a.co/d/1jfj9lr)
