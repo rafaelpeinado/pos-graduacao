@@ -203,3 +203,283 @@ A forma mais comum de cair no Caos tem limite com o Claro, pois havia uma melhor
 * [Simulação de Monte Carlo](https://www.ibm.com/br-pt/topics/monte-carlo-simulation)
 * **Cynefin:** quantidade de funcionário por modelo de trabalho é baseado em um estudo do [Robin Dunbar](https://www.theguardian.com/books/2021/feb/21/friends-by-robin-dunbar-review-how-important-are-your-pals) respondendo a quantidade de amigos que dá para manter e o tamanho máximo de um grupo.
   * **Complexo:** Miles Davis nome importante do Jazz e [Herbie Hancock](https://www.youtube.com/watch?v=FL4LxrN-iyw) (pianista): no jazz não havia um ensaio ou uma partitura. 
+
+
+# Métodos Ágeis II
+* Os métodos ágeis estão no Product X Market Fit para que uma boa solução feita no Problem x Solution Fit pule direto para a etapa Scale e não funcione, porque as pessoas, mercado e empresas não estavam preparados para a mudança de comportamento.
+* Product x Market Fit é encontrar uma solução que as pessoas realmente queiram
+
+## O que é inovação?
+Inovação não é mais uma coisa, um produto. Inovação é uma ideia, prática ou objeto que é percebido como novo por um indivíduo ou outro unidade de adoção. Pouco importa, do ponto de vista humana é objetivamente nova ou não, desde que ela foi descoberta ou usada pela primeira vez. Se a ideia parece nova para um indivíduo, ela é inovação.
+
+Inovação não é um processo tecnológico, é social. Uma inovação não depende apenas da qualidade da ideia.
+
+Em um grupo, para determinado assunto teremos
+* 2,5% de inovadores
+* 13,5% de primeiros adeptos: visionários e são capazes de gerar a prova social, tem características peculiares e são influenciadores daquela comunidade/grupo
+* 34% de maioria inicial: estão interessados na mudança, mas não quer assumir o risco agora. Tem características e necessidades muito específicas e precisam da prova social do grupo anterior
+* 34% de maioria final 
+* 16% de retardatários
+
+As mudanças precisam ser feitas por nichos
+
+
+## Planning Onion
+Visão (Problem x Solution Fit (antes do projeto)) -> Roadmap -> Release -> Sprint -> Backlog
+* Visão (Problem x Solution Fit (antes do projeto)): quando adquirimos uma visão para um produto, temos a ideia para resolver um problema
+* Roadmap (Após Problem x Solution Fit (antes do projeto)): sabemos onde queremos chegar, só não sei o caminho e é construído por etapas.
+* Release (Durante o projeto, buscando Product x Market Fit): é hora de testar e ver se está na direção certa ou não 
+* Sprint (Durante as Releases (Lançamentos)): prepara as direções pouco a pouco
+* Backlog (Lista de intenções)
+
+
+### Conceitos do Scrum
+**FÓRMULA DO ELEVATOR PITCH**
+para o(a) [público alvo]
+que tem [necessidade do público-alvo],
+o(a) [nome do produto]
+é um(a) [categoria de mercado]
+que [benefício principal].
+ao contrário do(a) [concorrentes(s)],
+o produto [diferencial do produto].
+
+
+#### Sobre o roadmap
+* Data (a data (ou período) do lançamento): quando estará disponível?
+* Nome (o nome da versão publicada): qual o nome da versão?
+* Meta (o motivo para criar a nova versão): por que estamos fazendo isso?
+* Requisitos (características de alto nível necessárias para atingir o objetivo): quais são as principais funções?
+* Métricas (as métricas para determinar se o objetivo foi atingido): como saberemos que a meta foi alcançada?
+
+Obs.: Método MoSCoW:
+* Must have: sem isso o produto é inviável
+* Should have: é de extrema importância
+* Could have: é desejável
+* Won't have: seria legal ter, mas não faremos agora
+
+
+##### Conceitos Scrum
+O backlog do produto deve ser D.E.E.P.
+* Detalhado no nível certo
+* Estimado adequadamente
+* Emergente: evolui com o tempo
+* Priorizado!
+
+
+## Valores do Scrum
+* **Coragem:** O Time Scrum precisa ter coragem para fazer a coisa certa e trabalhar em problemas difíceis
+* **Foco:** Todos focam no trabalho da Sprint e nos objetivos do Time Scrum
+* **Comprometimento:** As pessoas se comprometem pessoalmente em alcançar os objetivos do Time Scrum
+* **Respeito:** Os membros do Time Scrum respeitam uns aos outros para serem pessoas capazes e independentes
+* **Abertura:** O Time Scrum e seus Stakeholders concordam em estarem abertos a todo o trabalho e aos desafios com a execução dos trabalhos
+
+
+## As 5 Disfunções de um Time
+1. Ausência de confiança
+2. Medo do conflito
+3. Falta de comprometimento
+4. Falta de prestação de contas
+5. Negligência por resultados
+
+
+## Modelo de Tuckman
+5 estágios de um time
+* **Formação:** nível base de desempenho da equipe
+* **Conflito:** pessoas trabalhando juntas geram conflitos e faz o desempenho cair. O conflito não é necessariamente ruim, mas ele precisa ser resolvido
+* **Acordo:** é quando os conflitos começam a se normalizar, serem resolvidos
+* **Desempenho:** os conflitos foram resolvidos e a equipe começa a desempenhar e a equipe começa a performar melhor que no começo
+* **Dissolução:** é quando a equipe é desfeita
+
+## Scrum
+### 3 Pilares do Scrum
+**Obs.:** O Scrum é calcado também em processos empíricos **transparência, inspeção e adaptação**.
+O Empirismo é o que acontece no **complexo**
+* **Transparência:** em um time Scrum todos tem o mesmo acesso à mesma informação
+* **Inspeção:** tudo o que fazemos no Scrum é inspecionado tanto o produto quanto a forma que ele foi feito
+* **Adaptação:** ao inspecionar e encontrar oportunidades de melhorar, isso faremos
+
+
+### Papéis
+3 papéis principais:
+* **Product Owner (Accountable):** 
+  * Foco **prioridades** para o negócio, **adição de valor**
+  * Representa o **interesse dos clientes**, assegura que as entregas **adicionem valor** e que o backlog esteja sempre priorizado, atualizado e que reflita aquilo que é **mais importante** para os usuários, clientes e para a empresa.
+* **Scrum Master:** 
+  * Foco nos **processos** e no **desenvolvimento das pessoas**
+  * **Líder** de uma equipe **autogerenciável**.
+  * Tem um papel de mentor, que **remove impedimentos** e **desenvolve** constantemente as **pessoas**.
+  * Tem perguntas, não respostas. Caminha **com a equipe** num constante processo que busca identificar **o que não está funcionando** e **o que deve ser mudado**.
+* **Developers:**
+  * Foco nas **entregas, valor adicionado e em uso**
+  * Time auto-organizado, autogerenciável, **empoderado** e independente. Possuem autoridade para tomar decisões, assumir riscos e **responsabilidades**.
+  * Equipe **multidisciplinar** e com profundos conhecimentos sobre sua área de atuação.
+
+* São os principais, porque o Scrum não diz que precisa ter só esses papéis, mas sim que tem esses papéis. Sem esses papéis, não é Scrum.
+* [Evidence-Based Management Guide](https://www.scrum.org/resources/evidence-based-management-guide)
+
+
+**Product Backlog** é uma lista de intenções e quem é dono é o PO
+  * Ordenada: o que é mais importante em cima
+    * Detalhada
+    * Estimada
+    * Emergente
+    * Priorizada
+  * Construído em um hipótese/meta (**Meta do Produto**, criada no roadmap) que quero validar
+  * **Visão**
+
+* O Scrum proíbe passar mais do que um mês para entregar alguma coisa e testar (o manifesto ágil não)
+  * Se a Meta do Produto passar mais de um mês, precisaremos de mais de um sprint (um compartimento de tempo de até 30 dias)
+  * Timebox (tempo máximo de um evento)
+  * Precisa ser incrementado a cada sprint
+  * Precisa fazer um plano para o experimento/próximo passo
+* O plano tem o nome de Sprint Planning que deve ser uma plano de 8 horas para uma sprint de 30 dias
+  * Participam PO, SM e developers: o número máximo recomendado era 6 mais ou menos 3, agora recomenda 10
+  * Objetivo é responder três perguntas: 
+    * Por que faremos? (qual a meta?)
+    * O que precisamos fazer para alcançar essa meta? (quais itens do meu backlog vou puxar?) 
+    * Como faremos? (quais atividades precisaremos fazer para entregar esses itens)
+* **Sprint Backlog:** lista de atividades (tasks) para entregar os itens que selecionamos
+* **Sprint**
+  * Os developers são os principais autores
+  * Todos os dias se reúnem para sincronizar as tarefas para a entrega da meta
+    * **Daily Scrum:** 15 minutos, no mesmo horário e mesmo local
+* **Sprint Review:** até 4 horas e participam todas as pessoas que têm interesse sobre o produto. Nessa reunião é hora de inspecionar o produto que foi produzido. É mostrado o que foi desenvolvido
+* **Sprint Retrospective:** até 3 horas e só participa o Time Scrum. Inspeciona e adapta o trabalho da equipe (comunicação, ferramentas, interação)
+
+
+### Exemplo de Backlog da Sprint
+* PBI (Product Backlog Item): Criar página de login
+* Atividade da Sprint: Design da interface, implementação do backend, testes de integração
+* Voluntário (Atividade): João Silva, Maria Costa, Carlos Pereira
+* Estimativa Hrs: 8, 12, 6
+* Impedimento: Nenhum, Acesso a APIs externas, Falta de ambients de teste
+
+
+### Sprint Planning
+* IBLs, A Fazer, Fazendo, Feito
+* À media que o integrante da equipe conclua sua atividade, ele PUXA uma outra atividade do Backlog
+* O time refina suas tarefas ao longo da sprint
+
+
+## XP (eXtreme Programming)
+* Metodologia Ágil
+* XP é para software
+* Pesquisar Ciclo XP
+  * Release Plan
+  * Iteration Plan (Sprint)
+  * Acceptance Test
+  * Stand Up Meeting (reunião em pé)
+  * Pair Negotiation
+  * Unit Test
+  * Pair Programming
+  * Code
+
+### As 12 Práticas do XP
+**Práticas de Gestão**
+* **Cliente no Local:** Um contato central do cliente deve estar sempre acessível para esclarecer requisitos e perguntas diretamente
+* **Jogo de Planejamento:** Projetos, de acordo com o XP, são iterativos (repetidos) e incrementais (construídos gradualmente). Os conteúdos da próxima etapa são planejadas antes de cada iteração. Todos os membros do projeto (incluindo o cliente) participam.
+* **Lançamentos Curtos:** Novas entregas devem ser feitas em intervalos curtos. Consequentemente, os clientes recebem as funções necessárias mais rapidamente e podem fornecer feedback sobre o desenvolvimento mais rapidamente.
+
+**Práticas de Equipe**
+* **Metáfora:** Apenas algumas metáforas claras devem descrever o sistema em desenvolvimento, de modo que os detalhes do sistema sejam claros para todos os membros do projeto.
+* **Propriedade Coletiva:** Toda a equipe é responsável pelo sistema, não indivíduos. Cada desenvolvedor deve ter acesso a todas as linhas de código para que cada uma possa assumir a tarefa de outro desenvolvedor.
+* **Integração Contínua:** Todas as mudanças no sistema são integradas prontamente para que não ocorram muitas dependências entre as mudanças.
+* **Padrões de Codificação:** Considerando a responsabilidade comum pelo código, deve haver um padrão comum estabelecido para a escrita do código.
+* **Ritmo Sustentável:** O XP se baseia na criatividade dos membros individuais do projeto. Essa criatividade não pode ser alcançada se a equipe do projeto trabalhar constantemente em horas extras. Horas extras devem ser evitadas.
+
+**Práticas de Programação**
+* **Teste:** Todos os desenvolvimentos devem ser testados
+* **Design Simples:** O sistema deve ser projetado da forma mais simples possível para que seja mais fácil de entender, modificar e testar.
+* **Refatoração:** Assim que se tornar necessário alterar a estrutura do sistema, isso deve ser implementado.
+* **Programação de Pares:** Sempre há dois desenvolvedores sentados em frente a um computador para aumentar a qualidade e transferir o conhecimento.
+
+
+### Vantagens e Desvantagens
+#### Vantagens
+* Grandes projetos são divididos em quantidades gerenciáveis.
+* Redução de custos e tempo necessários para a realização do projeto.
+* Economia significativa de dinheiro por usar pouca documentação.
+* Simplicidade, buscando sempre o que pode ser evitado.
+* XP reduz os riscos relacionados à programação, espalhando riscos e diminuindo a dependência de indivíduos-chave.
+* A simplicidade em software traz qualidade e robustez, resultando em software mais rápido com menos defeitos.
+* Desenvolvimento orientado a testes e validação do cliente levam a um desenvolvimento bem-sucedido.
+
+#### Desvantagens
+* XP foca mais no código do que no design.
+* XP requer planejamento detalhado desde o início devido a mudanças de custos e escopo.
+* XP não mede/planeja a Garantia de Qualidade do código.
+* Convencer os desenvolvedores a aceitar essa prática difícil nem sempre é fácil. Requer mais disciplina na equipe e dedicação dos clientes.
+* A gestão de projetos pode ter dificuldades relacionadas às práticas que mudam durante o ciclo de vida.
+* A programação em pares praticada pelo XP pode levar a muita duplicação de códigos e dados.
+
+
+## Kanban
+De acordo com o livro Quality Software Management a perda de tempo e qualidade na entrega aumenta diretamente proporcional conforme o número de tarefas simultâneas (perda de contexto) estão acontecendo
+* 1 projeto perde 0%
+* 2 projetos perdem 20%
+* 3 projetos perdem 40%
+* 4 projetos perdem 60%
+* 5 projetos perdem 75%
+
+Existem dois Kanban
+* kanban: um sistema visual de controle
+* Kanban: Successful Evolutionary Change for Your Technology Business - 
+
+### O [Método Kanban](https://amoondetrabalho.com.br/blog/o-que-e-kanban-entenda-o-metodo/)
+* [Imagem demonstrando método Kanban](https://httcsg.stripocdn.email/content/guids/CABINET_ad97d2d553d4d0b7642864855dfb53f9/images/77581614070451324.jpg)
+* [The Official Guide to The Kanban Method](https://kanban.university/new-to-kanban-get-the-official-guide-to-the-kanban-method/)
+
+
+**Obs.:** Quadro Kanban, Método Kanban e Sistema Kanban são coisas diferentes
+* **Quadro:** A fazer, Fazendo e Feito
+* **Método:** David J. Anderson (Kanban)
+* **Sistema:** Toyota (kanban)
+
+
+* Identificando gargalos com o Kanban
+* Iniciamos com uma lista ou backlog
+  * A fazer
+* Adicionamos estados do processo (quadro Kanban)
+  * A fazer
+  * Fazendo (mas em qual parte? e não passa informações detalhadas, sendo assim, não conseguimos ver onde melhorar o processo)
+  * Feito
+* Aperfeiçoamos o entendimento das etapas do processo
+  * A fazer
+  * Análise
+  * Execução
+  * Conclusão
+  * Feito
+* Adicionamos filas nas etapas intermediárias (nas etapas Análise e Execução, por exemplo)
+  * Fazendo
+  * Feito
+* Limitamos a quantidade de itens, adicionando restrições nas etapas
+  * a única forma de melhorar um sistema, é melhorando a restrição do sistema, ou seja, onde as coisas estão parando.
+  * qual o limite? Um item para cada integrante mais um (é uam boa forma de começar)
+    * [Kanban Maturity Model (KMM)](https://www.objective.com.br/insights/kanban-maturity-model/)
+* A execução do processo indicará os gargalos
+* Posso criar a raia do Urgente, que será prioridade para entrar no sistema
+
+
+**Sistema criado quando:** Processo mapeado, limites do sistema estabelecidos e filas criadas 
+**[Kanban e Kaisen](https://solutiresponde.com.br/kanban-e-kaisen/)**
+**[Scrumban](https://blog.pmtech.com.br/scrumban/)**
+
+
+
+
+## Recomendações e observações
+* [Livro Diffusion of Innovations](https://a.co/d/dQHQ8Pk)
+* [Livro Social Network Analysis](https://a.co/d/9ECXJD0)
+* [Livro Inside the Tornado](https://a.co/d/4rOTpBF)
+* **[Livro Crossing the Chasm](https://a.co/d/1gqtiZq)**
+* [Livro Dealing with Darwin](https://a.co/d/1VoUwXu)
+* [Livro Teoria de Campo em Ciência Social](https://amenteemaravilhosa.com.br/teoria-de-campo-de-kurt-lewin/)
+* [Livro Sensemaking in Organizations](https://a.co/d/1jfj9lr)
+* [Livro Os 5 Desafios das Equipes](https://a.co/d/88MGUdB)
+* [Livro The Five Dysfunctions of a Team](https://a.co/d/9mRJi2n)
+* [OKR](https://resultadosdigitais.com.br/marketing/o-que-okr/#:~:text=OKR%20(Objectives%20and%20Key%20Results,conjunto%20de%20resultados%2Dchave).)
+* [Livro Product Backlog Building](https://a.co/d/2lGMGUX)
+* [Livro Extreme Programming Explained](https://a.co/d/9eHkk0e)
+* [Livro Quality Software Management](https://a.co/d/iPAqO1f)
+
+
