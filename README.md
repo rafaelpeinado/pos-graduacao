@@ -6,6 +6,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 #### Aulas
 * [Aula: User Experience (UX) - Guilhermo Almeida dos Reis](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
 * [Aula: Métodos Ágeis - Gino Terentim Junior](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/metodos-ageis)
+* [Aula: Containers (Kubernetes) - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/containers-kubernetes)
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
 * [Palestra: Os desafios da arquitetura de software - Guilherme Bezerra de Lima](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/palestra-os-desafios-da-arquitetura-de-software)
