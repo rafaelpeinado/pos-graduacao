@@ -8,6 +8,8 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Métodos Ágeis - Gino Terentim Junior](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/metodos-ageis)
 * [Aula: Containers (Kubernetes) - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/containers-kubernetes)
 * [Aula: Microsserviços - José Maria Cesário Júnior](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/microsservicos)
+* [Aula: Serverless - Rafael de Freitas Barbosa](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/serverless)
+
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
 * [Palestra: Os desafios da arquitetura de software - Guilherme Bezerra de Lima](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/palestra-os-desafios-da-arquitetura-de-software)
