@@ -358,3 +358,296 @@ A principal diferença entre API REST e API HTTP, está no plano de ação, por 
   * [Firecracker](https://firecracker-microvm.github.io/)
 
 
+
+# Serverless II
+## Acoplamento - a palavra mágica da integração
+A -> B
+* O acoplamento é uma medida de variabilidade independente entre sistemas conectados
+* a dissociação tem um curso, tanto no projeto quanto no tempo de execução
+* O acoplamento não é binário
+* O acoplamento não é unidimensional
+
+### As muitas facetas do acoplamento
+* Dependência de tecnologia: Java vs. C++
+* Dependência de localização: endereços IP, DNS
+* Dependência de formato de dados: Binário, XML, JSON, ProtoBuf, Avro
+* Dependência de tipo de dados: int16, int32, string, UTF-8, nulo, vazio
+* Dependência semântica: Nome, Nome do meio, ZIP
+* Dependência temporal: sincronização, assíncrona
+* Dependência de estilo de interação: mensagens, RPC, estilo de consulta (GraphQL)
+* Dependência de conversa: paginação, cache, novas tentativas
+
+
+## Síncrono de solicitação - resposta (request-response)
+### Modelo síncrono de solicitação-resposta
+* **Vantagens:**
+  * Baixa latência
+  * Simples
+  * Falhar rápido
+* **Desvantagens:**
+  * Falha no receptor
+  * Receptor estrangulado: muitas requisições chegando ao mesmo tempo e não escalou
+
+### Ponto a ponto assíncrono (fila)
+* **Vantagens:**
+  * Diminui o acoplamento temporal: consome a fila conforme tem capacidade
+  * Resiliente a falhas do receptor
+  * Receptor controla taxa de consumo
+  * Dead Letter Queue (DLQ) para errors: é uma fila exclusiva para erros, caso a operação da fila tenha erro após algumas tentativas. É uma maneira segura de guardar o que deu erro. É uma maneira segura de saber qual a mensagem que deu erro.
+  * Apenas um receptor pode consumir cada mensagem
+* **Desvantagens:**
+  * Correlação de resposta
+  * Tempo de recuperação do backlog
+  * Justiça em sistemas multilocatários
+
+#### Serviço de fila simples da Amazon (SQS)
+* Fila de mensagens totalmente gerenciada
+* Escala quase infinitamente
+* API simples e fácil de usar
+* Suporte para Dead Letter Queue (DLQ)
+* Opções padrão e FIFO
+
+
+#### Canais de mensagens
+* **Ponto a ponto (fila)**
+  * Cada mensagem consumida por um receptor
+  * Consumidores fáceis de escalar
+  * O buffer pode nivelar cargas de pico
+* **Publicar-assinar (tópico) Pub-Sub - SNS(Simple Notification Service) AWS**
+  * Cada mensagem consumida por cada assinante
+  * Como dimensionar os consumidores?
+  * Conceitualmente sem buffer
+* **Publicar-assinar (tópico) usando WebSocket**
+  * AWS IoT Core - Agente de mensagens
+  * MQTT, MQTT sobre WebSocket e HTTPS (somente publicação) para aplicativos no contexto de IoT
+  * **Obs.:** os pontos problemáticos do WebSocket
+    * usa HTTP em cima de TCP
+  * **MQTT** gasta menos banda e menos bateria
+
+
+#### Consumindo do Amazon SQS
+* Quando um consumidor pega uma mensagem da fila, ela não é excluída da fila imediatamente. Essa mensagem só é excluída da fila, depois de consumida com sucesso
+  * é importante ter mecanismos dentro da fila, pois as vezes a máquina pode ter sido desligada e ela não responderá que deu erro ao processar a imagem. Sendo assim, é importante ter um mecanismo para se proteger disso.
+* 
+
+## Prática
+[01-Fila-padrao](./aula-02/04-SQS/01-Fila-padrao/)
+* **Tamanho máximo da mensagem:** hoje o tamanho máximo é 256 KB, recentemente foi lançado que dá para aumentar até 10 MB. Porém é recomendado não usar isso, pois é uam fila e não um streaming de dados. Um streaming de dados é diferente, pois é um conjunto de dados enviados juntos. Caso seja necessário lidar com uma imagem, música etc, o ideal é colocar o caminho dessas mensagens.
+* O máximo de mensagens que podemos pegar em batch no SQS é 10. Então, se temos 100 mensagens na fila, vamos pegar 10 vezes se quisermos pegar em batch
+
+
+## Por dentro do Amazon SQS: tempos limite de visibilidade
+Tempo desde que pegamos a mensagem até o tempo que temos para deletar essa mensagem antes que ela volte para a fila
+
+
+### Amazon SQS para Lambda
+**Processamento de mensagens**
+* As mensagens são armazenadas de forma durável
+* A fila aceita mensagens de qualquer maneira
+* Não há necessidade de provisionar capacidade
+* Tempo limite de visibilidade para processamento de falha
+
+**Processamento sem servidor**
+* Fila de pesquisa do Lambda para mensagens
+* Processado em lotes
+
+
+### Push assíncrono do Lambda vs. Amazon SQS
+* **Push assíncrono**
+  * Invocação assíncrona do Lambda
+  * Integração direta
+  * Dimensionamento automático
+  * Sem lote
+  * Política DLQ simples
+  * Sem visibilidade do backlog
+  * Sem recursos extras de fila
+  * Sem custo extra
+
+* **Amazon SQS**
+  * Amazon SQS + Lambda
+  * Dois recursos: por consequência, acaba sendo um pouco mais caro
+  * Dimensionamento automático
+  * Suporta lote
+  * Política avançada de DLQ
+  * Métricas do Amazon CloudWatch
+  * Todos os recursos do SQS
+  * Custo das solicitações ao SQS
+
+[Definição de preço do Amazon SQS](https://aws.amazon.com/pt/sqs/pricing/)
+* Cada mensagem tem que fazer duas solicitações, uma de entrada e outra de saída, pelo menos.
+
+### Recursos avançados do Amazon SQS
+* Política avançada de DLQ
+* Lote
+* Mensagens atrasadas
+* Criptografia no lado do servidor com chave gerenciada pelo cliente (CMK)
+* Período de retenção
+* Atributos de mensagem
+* Métricas do CloudWatch
+* Operação de purga
+
+
+## Prática
+[02-DLQ](./aula-02/04-SQS/02-DLQ/)
+* aws sqs get-queue-url --queue-name demoqueue | jq .QueueUrl -r
+  * **jq:** biblioteca para processar JSON
+  * **.QueueUrl:** nome do atributo do JSON
+  * **-r:** remover as aspas duplas
+
+[03-Lambda](./aula-02/04-SQS/03-Lambda/)
+**Obs.:** não utilizar try catch quando usar Lambda e SQS, pois o Lambda remove o item da fila quando é finalizado com sucesso. O try catch mascara o erro e retorna sucesso. É possível usar o try catch apenas para logar o erro.
+
+* cd ./serverless e dentro da pasta temos o CloudFormation
+
+
+## Modelo ponto a ponto síncrono (roteador)
+Toda a lógica está no remetente
+
+* **Desvantagens**
+  * Aumenta o acoplamento de localização
+  * O remetente mantém a lógica de roteamento
+  * A complexidade do remetente aumenta com o tempo
+
+
+## Modelo de roteador de mensagem assíncrono ([barramento](https://aws.amazon.com/pt/what-is/enterprise-service-bus/))
+* **Vantagens:**
+  * Reduz o acoplamento de localização
+  * Eficiente para remetentes e destinatários
+  
+Na AWS é usado o Amazon Event Bridge
+
+
+### Amazon Event Bridge
+* **Serviço de barramento de evento** simples, flexível, totalmente gerenciado e com pagamento conforme o uso, que facilita a ingestão e o processamento de dados de **serviços da AWS, de seus próprios aplicativos e de aplicativos SaaS**.
+
+* Um barramento de eventos precisa ter características como:
+  * Conseguir fazer arquivamento de mensagens
+  * Conseguir fazer schema discovery do que está passando por ali
+  * Se necessário, conseguir fazer replay
+  * Ter capacidade de ter várias regras, cada uma em um posição diferente
+Por esses motivos é muito comum usar o Kafka
+
+* A diferença entre um streaming e uma fila:
+  * Um streaming vai juntar os dados que chegam em determinado período de tempo e vai enviar.
+  * Uma fila vai pegar unidade a unidade e enfileirar isso para fazer a entrega
+
+O event bridge é um barramento de eventos totalmente serverless onde pagamos por interação de eventos
+* **Schema:**
+  * **AWS Services:** todos os serviços da AWS usam o Event Bridge para [Control Plane](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/control-plane-vs.-application-plane.html), que são criação, alteração ou exclusão de um serviço.
+    * Por exemplo, toda vez que um Lambda for criado, ele deveria ter uma tag específica. Podemos criar uma regra no Event Bridge para que quando um Lambda for criado, ele usa uma outra Lambda para validar se as tags foram criadas e forçar a criação
+  * **Custom Apps:** por exemplo, as nossas próprias aplicações
+  * **SaaS Apps:** GitHub, GitLab, Jira etc
+  * **Microservices** 
+* **Schema Discovery:**
+  * **Default event bus:** sempre é utilizado, porque os eventos da AWS entram nele. **Não usar barramentos default para publicar eventos customizados.**
+  * **Custom event bus:** podemos organizar onde os eventos passarão
+  * **Partner event bus:** integração com SaaS
+  * **Archives:** um lugar para guardar os eventos que passou pelo barramento por longo prazo e ter a chance de fazer um replay sem onerar o banco de dados
+
+* **Rules:** configurar regras (rules) para filtrar e enviar eventos para o destino
+* **Code Binding:**
+  * AWS Lambda
+  * Amazon SNS
+  * More AWS service targets
+  * API Destination (to SaaS, apps, custom apps, etc)
+  * Targets (route events to a variety of targets for processing)
+
+
+### Regras de roteamento baseadas em conteúdo do EventBridge
+* Evento de exemplo do EventBridge
+  * **Padrão:**
+    * **source:** valor do domínio
+    * **detail-type:** tipo do pedido
+    * **detail:** conteúdo do evento
+* Exemplo de regra do EventBridge
+  * **detail**
+
+Os dados enviados do evento precisam estar de acordo com as regras do EventBridge
+
+
+### Integre mais de 20 serviços AWS e destino de API
+* AWS Lambda
+* Amazon FCS
+* Amazon EC2
+* AWS Batch
+* AWS Step Function
+* Amazon SNS
+* Amazon SQS
+* Amazon API Gateway
+* Amazon Kinesis Data Streams
+* Amazon Kinesis Data Firehose
+* AWS Glue
+* Redshit da Amazon
+* Amazon CloudWatch
+* AWS Systems Management
+* AWS Systems Manager Incident Manager
+* Amazon Inspector
+* AWS Code Pipeline
+* AWS CodeBuild
+* Amazon Sage
+* Destinos de API
+
+
+## Arquitetura orientada a eventos
+### Propriedades de eventos
+* Eventos são sinais de que o estado de um sistema mudou
+* Os eventos ocorrem no passado (por exemplo, **OrderCreated**)
+* Os eventos não podem ser alterados (imutáveis)
+* Diminua o acoplamento restringindo informações a dados importantes
+
+
+### Eventos esparsos vs. descrições completas de estado
+* **Eventos esparsos**
+  * O pedido **123** foi criado às **10h47** pelo cliente **456**
+* **Descrição completa do estado:**
+  * O pedido **123** foi criado às **10h47** pelo cliente **456** O status atual é **Aberto**, o total foi de **$ 237,51**...
+
+
+#### Considerações com eventos esparsos
+O pedido **123** foi criado às **10h47** pelo cliente **456**
+
+Mas quais são os detalhes do pedido **123**?
+* Os microsserviços precisam enriquecer esse dado
+* Dependendo do tipo de negócio, se o principal fator for a segurança, o ideal é usar o esparso
+
+
+#### Considerações com descrições completas do estado
+* Os esquemas de eventos devem ser compatíveis com versões anteriores
+* O custo para calcular valores pode aumentar com o tempo
+
+
+### **Coreografe** eventos **entre domínios** usando assinaturas
+* Notificar-me quando um pedido for criados: Inscrição
+* Pedido criado: notificação
+
+
+### **Orquestre** um processo de negócios **dentro de um domínio**, resultando em um evento publicado
+Ordenar-se -> 1 -> Gerenciador de estoque -> Em estoque? -> Gerenciador de fatures -> Criar pedido -> 2 -> Pedido Criado
+* Aqui foi usado Fluxo de trabalho do AWS Step Functions
+
+
+### Melhor juntos: Orquestração + Coreografia
+Gateway de API -> AWS Step Functions -> Barramento de eventos EventBridge -> Regras para enviar para domínios diferentes
+* AWS Step Functions para resolver problema de domínio
+
+
+## Prático
+[05-EventBridge](./aula-02/05-EventBridge/)
+* é case sensitive o nome do evento
+* pode definir até 5 eventos, mas o ideal é não passar de 2, pois destinos precisam ter necessidades diferentes
+
+
+[06-deletando-o-ambiente](./aula-02/06-deletando-o-ambiente/)
+Deleta exatamente TUDO do que está na zona
+
+
+## Observações e Referências
+* [Unit Testing AWS Lambda with Python and Mock AWS Services](https://aws.amazon.com/pt/blogs/devops/unit-testing-aws-lambda-with-python-and-mock-aws-services/)
+* [GitHub: aws-unit-testing](https://github.com/aws-samples/aws-unit-testing)
+* [Testar funções e aplicações com tecnologia sem servidor](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/testing-guide.html)
+* [Using GitHub Actions to deploy serverless applications](https://aws.amazon.com/pt/blogs/compute/using-github-actions-to-deploy-serverless-applications/)
+
+* Marc Tawil
+* Eduardo Marostica
+* Rita Wu
+* Eraldo Benazzi
