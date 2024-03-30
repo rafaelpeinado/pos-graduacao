@@ -252,9 +252,17 @@ Não é uma boa prática criar conexões de VPN para ter conexões com a nuvem. 
 * Existem muitos recursos disponíveis para empresas que desejam aprender mais sobre a computação em nuvem, incluindo cursos, certificações e consultores especializados
   
 
-
 ## Observações
 * [Magalu Cloud](https://magalu.cloud/)
 * [O que é PCI e quais são as normas dos cartões de crédito na internet?](https://www.ecommercebrasil.com.br/artigos/o-que-e-pci-e-quais-sao-as-normas-dos-cartoes-de-credito-na-internet)
 * [Microsoft revela tour virtual em um de seus datacenters](https://news.microsoft.com/pt-br/microsoft-revela-tour-virtual-em-um-de-seus-datacenters/)
 
+
+# Cloud Computing (IaaS, Paas, SaaS) II
+* [Infraestrutura global do Azure](https://azure.microsoft.com/pt-br/explore/global-infrastructure)
+* [Lógica do aplicativo e interface do usuário habilitada para IA](https://azure.microsoft.com/pt-br/solutions/modern-application-development#tabx53d2a906181c44c3956df6ff1960dfbf)
+
+
+## Observações
+* Flexible Server Azure
+* [Qual é a diferença entre GPUs e CPUs?](https://aws.amazon.com/pt/compare/the-difference-between-gpus-cpus/)
