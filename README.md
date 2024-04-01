@@ -9,6 +9,8 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Containers (Kubernetes) - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/containers-kubernetes)
 * [Aula: Microsserviços - José Maria Cesário Júnior](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/microsservicos)
 * [Aula: Serverless - Rafael de Freitas Barbosa](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/serverless)
+* [Aula: Cloud Computing (IaaS, Paas, SaaS) - Marcelo Cesar Maciel Leite](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/cloud-computing-iaas-paas-saas)
+* [Aula: Devops - Rogério da Rocha Rodrigues](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/devops)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
