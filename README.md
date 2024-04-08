@@ -432,3 +432,375 @@ Ambiente de desenvolvimento com base em nuvem hospedado pelo GitHub
 * [Visão geral do gerenciamento do ciclo de vida do aplicativo com a Microsoft Power Platform](https://learn.microsoft.com/pt-br/power-platform/alm/overview-alm)
 * [Manual de DevOps: como obter agilidade, confiabilidade e segurança em organizações tecnológicas](https://a.co/d/8Cg6cRG)
 
+
+
+# DevOps II
+## Azure Pipelines
+### Explorar o conceito de pipelines no DevOps
+* Automação de compilação e integração contínua -> Automação de teste -> Automação de implantação
+* O pipeline possibilita um fluxo constante de alterações na produção por meio de uma linha de produção de automatizada
+* Os pipelines criam um processo reproduzível, confiável e de melhoria incremental para levar o software da fase conceitual ao cliente
+* Os pipelines exigem infraestrutura, que terá um impacto direto na eficácia deles
+
+
+### Entendendo o Azure Pipelines
+* O Azure Pipelines é um serviço de nuvem que você pode usar para criar e testar automaticamente o projeto de código e disponibilizá-lo para outros usuários.
+* É ideal para a integração contínua e entrega contínua:
+  * Trabalhe com qualquer linguagem ou plataforma - Python, Java, PHP, Ruby, C# e Go
+  * Implante em diferentes tipos de destinos ao mesmo tempo
+  * Integre com implantações do Azure: Registros de contêiner, máquinas virtuais, serviços do Azure ou qualquer destino local ou na nuvem (Microsoft Azure, Google Cloud ou AWS)
+  * Crie em computadores Windows, Linux ou macOS
+  * Integrar com o GitHub
+  * Trabalhe com projetos de código aberto
+
+
+### Pools e agentes do Azure Pipelines
+* Escolher entre agentes hospedados pela Microsoft versus auto-hospedados
+  * Para criar seu código ou implantar um projeto, geralmente você precisa de pelo menos um agente
+  * Um agente é um software instalável que executa um trabalho de build ou implantação por vez
+
+* **Há dois tipos de agentes:**
+  * **Agentes hospedado pela Microsoft:** manutenção e atualizações são feitas automaticamente. Cada vez que um pipeline é executado, uma nova máquina virtual (instância) é fornecida. Há limites de tempo para trabalhos executados nesses agentes.
+  * **Agentes auto-hospedados:** você cuida da manutenção e das atualizações. Tenha mais controle para instalar o software dependente necessário. Pode ser instalado em computadores Linux, macOS, Windows ou em um contêiner do Docker Linux. Não há limites de tempo para trabalhos executados nesses agentes. 
+
+
+### Explorar tipos de trabalho
+* Há quatro tipos de tarefas:
+  * **Trabalhos de pool de agentes:** trabalhos executados em um agente de um pool de agentes
+  * **Trabalhos de contêiner:** trabalhos executados em um contêiner em um agente de um pool de agentes
+  * **Trabalhos em grupos de implantação:** trabalhos executados em sistemas em um grupo de implantação
+  * **Trabalhos sem agente:** trabalhos executados no Azure DevOps Server (também chamados de trabalhos de servidor)
+
+
+### Introdução aos pools de agentes
+* Você pode organizar os agentes em pools de agentes
+* Um pool de agentes define o limite de compartilhamento
+* No Azure Pipelines, os pools de agentes têm como escopo a organização do Azure DevOps, de modo que é possível compartilhar um pool de agentes entre projetos
+
+
+### Entender as situações típicas para pool de agentes
+* Você participa de um projeto e quer usar um conjunto de computadores da equipe para executar trabalhos de compilação e implantação
+* Você participa da equipe de infraestrutura e gostaria de configurar um pool de agentes para uso em todos os projetos
+* Você quer compartilhar um conjunto de computadores de agentes com vários projetos, mas não todos
+
+
+### Comunicar-se com o Azure Pipelines
+* O agente determina qual trabalho ele precisa executar, relatar os logs e o status
+* A comunicação é sempre iniciada pelo agente
+* Todas as mensagens do agente para o Azure Pipelines são enviados por HTTPS
+
+
+### Comunicar-se para implantar em servidores de destino
+* O agente deve ter conectividade de "linha de visão" com os servidores
+* Por padrão, os pools de agentes hospedados pela Microsoft têm conectividade com sites e servidores do Azure em execução no Azure
+* Você precisará configurá-lo manualmente
+
+
+### Examinar outras considerações
+* Autenticação
+* Tokens de acesso pessoal
+* Processos interativos versus de serviço
+* Versão e atualizações do agente
+
+
+## Pipelines e a Parallels Jobs
+### Estimar trabalhos paralelos
+* Determine quantos trabalhos são necessários
+* Estimativas simples versus estimativas detalhadas
+* Você pode exibir todas as builds e versões
+* Os trabalhos paralelos são comprados no nível da organização e compartilhados por todos os projetos
+
+
+### Explorar o Azure Pipelines e o Visual Designer
+* Editar código -> Efetuar push para o repositório de código -> Tarefas de Build + Tarefas de teste (Integração contínua) -> Criar artefato -> Tarefas de liberação (Implantação Contínua) -> Implantar para o destino
+
+* Crie e configure os pipelines de build e versão
+* Efetue push do código para o repositório de controle de versão
+* A build cria um artefato que é usado pelo resto do pipeline
+* Agora seu código está atualizado, compilado, testado e empacotado
+
+Geralmente conhecido como "Pipelines Clássicos"
+
+
+### Descrever o Azure Pipelines e o YAML
+* Editar código -> Editar arquivo YAML -> Efetuar push para o repositório de código -> Azure Pipelines -> Implantar para o destino
+
+* Configure o Azure Pipelines para usar seu repositório Git
+* Edite o arquivo Azure-pipelines.yml para definir a build
+* Efetue push do código para repositório de controle de versão
+* Agora seu código está atualizado, compilado, testado e empacotado
+
+Embora mais orientada a código, a definição de pipelines usando YAML é preferida
+
+
+## Introdução a Integração Contínua
+* A CI (Integração Contínua) é o processo de automatizar a compilação e o teste do código
+* A CI incentiva os desenvolvedores a compartilhar códigos e testes de unidade mesclando as alterações no repositório compartilhado de controle de versão
+* Quando uma alteração é detectada, ela aciona um sistema de compilação automatizado. O código é compilado usando uma definição de compilação. Os desenvolvedores respondem a quaisquer problemas ou bugs.
+* A CI mantém a ramificação principal limpa, garantindo que os bugs sejam detectados no início do ciclo de desenvolvimento, tomando a correção menos dispendiosa
+
+
+### Conhecer os quatro pilares da integração contínua
+* **Sistema de controle de versão:** gerencia as alterações no código-fonte ao longo do tempo
+* **Sistema de gerenciamento de pacotes:** é usado para instalar, desinstalar e gerenciar pacotes de software
+* **Sistema de integração contínua:** mescla todas as cópias de trabalho do desenvolvedor em uma linha principal compartilhada várias vezes por dia
+* **Processo de compilação automatizado:** cria uma compilação de software, incluindo a compilação, a compactação e a execução de testes automatizados
+
+
+### Explorar os benefícios da integração contínua
+* Aprimoramento da qualidade do código com base em comentários rápidos
+* Disparo de testes automatizados para cada alteração de código
+* Redução dos tempos de compilação para acelerar os comentários e detectar problemas antecipadamente (redução de risco)
+* Aprimoramento do gerenciamento de dívidas técnicas e da análise de código
+* Redução de mesclagens longas, complexas e propensas a bugs
+* Aumento da confiança na integridade da base de código muito antes da implantação de produção
+* Comentário rápido para o desenvolvedor
+
+
+## Integração com Pipelines
+### Descrever a anatomia de um pipeline
+* **Nome:** embora geralmente seja ignorado (se for ignorado, um nome baseado em data será gerado automaticamente)
+* **Gatilho:** mais sobre gatilhos mais tarde, mas na ausência de um explícito, haverá um "gatilho implícito em cada confirmação para qualquer caminho de qualquer ramificação neste repositório"
+* **Variáveis:** variáveis "em linha" (mais sobre outros tipos de variáveis posteriormente)
+* **Trabalho:** cada pipeline deve ter pelo menos um trabalho
+* **Pool:** você configura em qual pool (fila) o trabalho deve ser executado
+* **Verificação:** o "check-out: self" informa ao trabalho qual repositório (ou repositórios se houver várias check-outs) deve fazer o check-out.
+* **Etapas:** as tarefas reais que precisam ser executadas: nesse caso, uma tarefa de "script" (o script é um alias) que pode executar scripts em linha
+
+
+### Usar vários repositórios no seu pipelines
+* comum para utilitários usados em mais de um pipeline
+* adicionar etapas extras de check-out
+* não era aceito em versões anteriores e artefatos foram usados como uma solução alternativa
+* alguns pipelines podem não precisar de repositórios
+* com o Azure Pipelines, é possível criar a validar cada solicitação de pull e fazer commit para seu repositório do GitHub
+
+
+## Github Actions
+### O que são Actions?
+* automações no ambiente do GitHub
+* frequentemente usado para compilar implementações de CI/CD
+* com base em arquivos YAML nos repositórios do GitHub
+* executado no GitHub ou em executores auto-hospedados
+* grande número de ações existentes no GitHub Marketplace
+
+
+### Explorar o fluxo de Actions
+* **Eventos que disparam fluxo de trabalho:** cronograma, código, etc.
+* **Os fluxos de trabalho contêm trabalhos:** pode conter vários
+* **Trabalhos usam ações:** configurado dentro de etapas
+
+
+### Noções básicas de fluxos de trabalho
+* Defina a automação necessária:
+  * eventos e trabalhos
+  * escrito em YAML
+  * armazenamento em **.github/workflows**
+  * fluxos de trabalho iniciais disponíveis
+
+
+### Explorar Eventos
+* Definido pela cláusula **ativado**
+  * Eventos agendados
+  * Eventos de código
+  * Eventos manuais
+  * Eventos de webhook
+  * Eventos externos
+
+
+### Explorar trabalhos
+* Os fluxos de trabalho contêm um ou mais trabalhos. Os trabalhos contêm um conjunto de etapas a serem executadas em ordem
+* Os trabalhos são executados em paralelo por padrão, mas podem ser configurados com dependências
+
+
+## Integração Contínua com Github Actions
+### Descrever as práticas recomendadas para a criação de ações
+* Crie ações encadeáveis: evite ações monolíticas
+* Controlar a versão das ações como outro código
+* Fornecer um rótulo **mais recente**
+* Adicionar a documentação apropriada: como README.md
+* Adicionar metadados de **action.yml** detalhados
+* Considerar contribuir para o marketplace
+
+
+### Marcar versões com marcas Git
+* as versões são baseadas em tags Git
+* marcar um ponto específico no histórico do repositório
+* as tags podem ser exibidas no histórico de um repositório
+
+
+## Estratégia de CI para Containers
+### Por que contêineres?
+* **Portáteis:** executam contêineres sempre que o Docker for compatível
+* **Consistentes:** garante que os desenvolvedores estão trabalhando com o mesmo código
+* **Leves:** usam muito menos disco, CPU e memória do que VMs
+* **Eficientes:** implantação, inicialização, aplicação de patches e atualizações rápidas
+
+
+## Introdução a Entrega Contínua
+### Explorar o tradicional ciclo de desenvolvimento de TI
+* um bom número de hotfixes e solicitações de alteração para produção
+* muitas alterações de escopo durante um projeto
+* muitos trabalhos não planejados devido a dívidas técnicas (descompasso de ambiente, qualidade inadequada e entregas)
+* negócios envolvidos, mas não é associado à TI
+
+
+### O que é a entrega contínua?
+* **Os oito princípios da entrega contínua:**
+  * o processo de liberação/implantação de software DEVE ser confiável e repetível 
+  * manter tudo sob o controle de código-fonte
+  * todos têm responsabilidade pelo processo de versão
+  * automatização completa
+  * pronto significa "lançado"
+  * melhorar continuamente
+  * se algo for difícil ou custoso, faça com mais frequência
+  * alta qualidade de build
+
+
+### Noções básicas sobre versões e implantações
+* a versão e a implantação geralmente estão associados
+* versão não é o mesmo que implantação
+* separe a versão funcional da versão técnica:
+  * a versão funcional expõe recursos aos clientes
+  * a versão técnica implanta a funcionalidade
+
+
+### Entender o processo de versão em relação à versão
+* o processo de versão envolve todas as etapas pelas quais passa ao mover seu artefato que vem de uma das fontes de artefato
+* uma versão é um pacote ou contêiner que acomoda um conjunto de artefatos especificado em um pipeline de lançamento no processo de CI/CD. Dessa forma, contém todas as informações necessárias para executar todas as tarefas e ações no pipeline de versão, como os estágios (ou ambientes), as tarefas de cada um, os valores do parâmetros e variáveis da tarefas, as políticas de versão, como gatilhos, aprovadores e opções de enfileiramento de versão
+* pode haver várias versões em um pipeline de liberação (ou processo de lançamento)
+
+
+## Release Pipelines
+### Descrever as funcionalidades do pipeline de lançamento do Azure DevOps
+* suporte a pipelines como código (por meio de YAML)
+* a maioria dos recursos dos pipelines de versão clássica está disponível
+
+
+### Explorar fontes de artefatos
+* Artefatos de compilação
+* Repositórios de pacotes
+* Repositórios de contêineres
+* Controle de código-fonte
+
+
+### Escolher a fonte de artefato apropriada
+* rastreabilidade e capacidade de auditoria
+* imutabilidade
+* controle de versão
+
+
+### Estágios de implantação
+* O que é um estágio?
+  * diferentes termos usados em várias ferramentas de versão (estágios/ambientes)
+  * um limite lógico em um pipeline que contém um ou mais trabalhos
+* Qual é o ambiente de destino?
+* Ambientes de vida longa ou curta
+* Finalidade de um ambiente
+* Lançamento de versão e correção de bugs
+
+
+### Explorar tarefas de compilação e versão
+* Unidades de código executável usadas para executar ações designadas em uma ordem específica
+* Etapas para compilar, testar, executar utilitários, empacotar e implantar
+* Modelo extensível
+* Tarefas da comunidade disponíveis no marketplace
+
+
+### Explorar tarefas personalizadas de build e lançamento
+* privado ou público acessível
+* acesso a variáveis que, de outra forma, não são acessíveis
+* usar e reutilizar um ponto de extremidade seguro para um servidor de destino
+* distribuição com segurança e eficiência em todas as organizações
+* os usuários não veem os destalhes da implementação
+
+
+### Explorar os trabalhos de lançamento
+* Um trabalho é uma série de tarefas que são executadas sequencialmente no mesmo destino
+* Pode ser combinado em um pipeline para permitir a implantação multiplataforma:
+  * por exemplo, implantar back-end .NET via Windows, aplicativo iOS via MacOS e frontend Angular via Linux
+* Os trabalhos são executados no computador host em que o agente está instalado
+
+
+## Estratégias de Versão
+### Noções básicas sobre a cadência de entrega e os três tipos de gatilhos
+* Gatilho de implantação contínua
+* Gatilho agendado
+* Gatilho manual
+
+
+### Explorar aprovações de versão
+* as aprovações de versão não controlam **como**, mas controlam **se** você deseja fazer entregas várias vezes por dia
+* as aprovações manuais ajudam a criar confiança sobre o processo de versão automatizada
+* os portões de versão oferecem controle adicional sobre o início e a conclusão do pipeline de implantação. Eles geralmente podem ser configurados como uma condição de pré-implantação e pós-implantação e podem executar a validação com outros sistemas automatizados até que requisitos específicos sejam verificados
+
+
+### Explorar os portões de versão
+* Os portões de versão oferecem controle adicional sobre o início e a conclusão do pipeline de implantação. Geralmente, eles são configurados como condições de pré-implantação e pós-implantação
+  * Gerenciamento de incidentes e problemas
+  * Notificação de usuário por integração com sistemas de colaboração
+  * Validação de qualidade
+  * Verificação de segurança em artefatos
+  * Experiência do usuário relativa à linha de base
+  * Gerenciamento de mudanças
+  * Integridade da infraestrutura
+
+
+### Usar portões de versão para proteger a qualidade
+* sem novos problemas de bloqueador
+* cobertura de código no novo código maior que 80%
+* sem violações de licença
+* nenhuma vulnerabilidade em dependências
+* nenhuma nova dívida técnica introduzida
+* verificações de conformidade
+* há itens de trabalho vinculados à versão?
+* a versão foi iniciada por uma pessoa diferente daquela que fez o commit do código?
+* o desempenho não é afetado após uma nova versão?
+
+
+## YAML Multi Stage pipelines
+### Descrever estratégias de trabalhos de implantação
+* habilitar a inicialização
+* implantar a atualização
+* encaminhar o tráfego para a versão atualizada
+* testar a versão atualizada após o roteamento do tráfego
+* se houver uma falha, execute as etapas para restaurar a última versão boa conhecida
+
+
+### Descrever ganchos do ciclo de vida
+* **preDeploy**: usado para executar etapas que inicializam antes do início da implantação do aplicativo
+* **deploy:** usado para executar etapas que implantam seu aplicativo
+* **routeTraffic:** usado para executar etapas que servem o tráfego para a versão atualizada
+* **postRouteTraffic:** usado para executar etapas depois que o tráfego é roteado
+* **on: failure ou on: success:** usado para executar etapas para reverter ações ou limpar
+
+
+### Descrever estratégias de trabalhos de implantação - RunOnce
+* **runOnce** é uma estratégia de implantação mais simples em que todos os ganchos de ciclo de vida são executados:
+  * preDeploy
+  * deploy
+  * routeTraffic
+  * postRouteTraffic
+* Então, **on:success** ou **on:failure** é executado
+
+
+### Descrever estratégias de trabalhos de implantação - rolling
+* uma implantação em andamento substitui instâncias da versão prévia de um aplicativo com instâncias da nova versão
+* ela pode ser configurada especificando a palavra-chave em andamento na estratégia: nó.
+
+
+### Descrever estratégias de trabalhos de implantação - Canary
+* estratégia de implantação avançada que ajuda a atenuar o risco envolvido na implantação de novas versões de aplicativos
+* distribui as alterações para um pequeno subconjunto de servidores primeiro
+* lança em mais servidores em sua infraestrutura e roteia mais tráfego para ele
+
+
+### Descrever estratégias de trabalhos de implantação - exemplo de Canary para AKS
+* No próximo exemplo, a estratégia canário do AKS implantará primeiro as alterações com pods de 10%, seguidos por 20%, enquanto monitora a integridade durante o postRouteTraffic. Se tudo correr bem, promoverá 100%.
+
+
+## Observações
+* [Versionamento semântico](https://semver.org/lang/pt-BR/)
+* [Multi stage build docker: uma abordagem para otimizar o processo de criação da imagem docker](https://thiagolopessilva.medium.com/multi-stage-build-docker-uma-abordagem-para-otimizar-o-processo-de-cria%C3%A7%C3%A3o-da-imagem-docker-2e579ecd830e)
+* [Editor de pipeline YAML](https://learn.microsoft.com/pt-br/azure/devops/pipelines/get-started/yaml-pipeline-editor?view=azure-devops)
+* [Implantação azul/verde na AWS](https://aws.amazon.com/pt/quickstart/architecture/blue-green-deployment/)
