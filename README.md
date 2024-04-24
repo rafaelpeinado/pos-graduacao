@@ -12,7 +12,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Cloud Computing (IaaS, Paas, SaaS) - Marcelo Cesar Maciel Leite](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/cloud-computing-iaas-paas-saas)
 * [Aula: Devops - Rogério da Rocha Rodrigues](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/devops)
 * [Aula: Comunicação - Adriana Cristina Ferreira Caldana](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/comunicacao)
-* [Aula: Fundamentos da Segurança da Informação I - Rodolfo Ipolito Meneguette](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/fundamentos-da-segurança-da-informaçao)
+* [Aula: Fundamentos da Segurança da Informação - Rodolfo Ipolito Meneguette](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/fundamentos-da-segurança-da-informaçao)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
