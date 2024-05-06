@@ -406,6 +406,7 @@ CAIXA -> ASPECTO FINANCEIRO -> FÔLEGO
 
 
 * **ALGUNS MÚLTIPLOS NO BRASIL**
+
 |                            | Múltiplos EBTIDA | Múltiplo Venda |
 | :------------------------: | :--------------: | :------------: |
 | Agropecuária e Agricultura |       7,29       |      1,65      |
@@ -437,6 +438,119 @@ CAIXA -> ASPECTO FINANCEIRO -> FÔLEGO
         * No ano 2, V = 100 / (1 + 0,1)<sup>2</sup>
       * Valor Residual = [FC <sub>n+1</sub>/(K - g)]/(1 + K)<sup>n</sup> e se admitir que não vai crescer nada é Valor Residual = [FC <sub>n+1</sub>/(K)]/(1 + K)<sup>n</sup>
 
+
+
+# Investimento e Valuation de Empresas II
+## Métodos de Valuation
+### Valor Contábil
+#### Crescimento e Criação de Valor
+* ROE = Lucro Líquido/Patrimônio Líquido
+* Lucro Líquido = Lucro - Dívidas
+
+
+#### Fluxo de Caixa para o Valuation
+* Free Cash Flow - Fluxo de Caixa Disponível (Livre)
+  * Caixa em excesso após a Dedução dos CD Operacionais, Impostos, e das Necessidades de Investimentos (Fixo (CapEx) e Giro)
+
+
+#### Abordagens do FCD
+* Fluxo de Caixa Disponível (Free Cash Flow)
+  * Free Operating Cash Flow (FOCF): esse valor de caixa te dá o valor da empresa
+    * Fluxo de Caixa Disponível da Empresa (FCDE)
+    * Enterprise Value - Valor da Empresa
+  * Free Cash Flow to Equity (FCFE): Valor do patrimônio Líquido
+    * Fluxo de Caixa Disponível do Acionista (FCDA)
+    * Equity Value - Valor do PL
+  * Lucro em Excesso
+    * Vo = Capital Investido + PV do Retorno em Excesso
+    * Vo = Capital Investido + Goodwill
+
+
+#### Métodos de Avaliação
+* Enterprise Value (Ativo):
+  * FCDE
+  * Vo = FCDE / WACC
+    * WACC: Custo Total de Capital (Custo Médio Ponderado de Capital): supondo que o acionista quer 18% ao ano e o banco cobra 10% ao ano, então o custo é do acionista de 18%
+    * 60% Capital Próprio e 40% dívidas
+      * WACC = 40% + 10% + 60% * 18% = 4% + 10,8% = 14,8% de taxa média
+* Equity Value (Passivo):
+  * PL -> FCDA
+  * PL = FCDA / Ke
+* Vo = Capital Investido + Goodwill
+* Goodwill = PV do LE
+
+
+##### Free Operating Cash Flow - FOCF / Fluxo de Caixa Disponível da Empresa - FCDE
+* Enterprise Value
+  * NOPAT                                   XXX
+  * (+) DEPRECIAÇÃO                         XX
+  * (=) FLUXO DE CAIXA OPERACIONAL - FCO    XXX
+  * (-) VARIAÇÃO (DELTA) NO GIRO            XX
+  * (-) INVESTIMENTO DE CAPITAL - CAPEX     XX
+  * (=) FCDE                                XXX
+* **Taxa de Desconto do FCDE:** WACC (Custo Médio Ponderado de Capital)
+
+
+### Caso Prático 2
+* Ativos operacionais: Caixa, Contas a Receber, Produtos em estoque, serviços prestados
+* Ativos fixos médios: de um determinado exercício
+* Passivos operacionais médios: salários, impostos, débitos para fornecedores
+* Passivos onerosos médios = CAPITAL DE TERCEIROS
+* PL médio = CAPITAL PRÓPRIO
+
+* Usamos o WACC como custo de capital, porque temos dívida e recursos próprios
+
+
+### Caso Prático Valuation Fluxo de Caixa Livre
+* **Taxa de Crescimento do Período Explícito:** Crescimento esperado
+* Quanto mais longo for o período explícito, mais teremos qualidade na nossa análise e das premissas
+* Custo do Capital de Terceiros % a.a:	Valor do juros% - 34% * Valor do juros% = 10% - 34% * 10% = 6,60%
+
+
+### Free Cash Flow to Equity - FCFE / Fluxo de Caixa Disponível do Acionista - FCDA
+Quanto pode Distribuir de dividendos
+* Equity Value
+  * LUCRO LÍQUIDO                           XXX
+  * (+) DEPRECIAÇÃO                         XX
+  * (=) FLUXO DE CAIXA OPERACIONAL - FCO    XXX
+  * (-) VARIAÇÃO NO GIRO                    XX
+  * (-) INVESTIMENTO DE CAPITAL - CAPEX     XX
+  * (+) NOVAS DÍVIDAS                       XX
+  * (=) FCDA                                XXX
+* **Taxa de Desconto do FCDA:** Taxa de Desconto do FCDA = Ke
+
+
+## Avaliação de Startup
+* Nem sempre Startups geram fluxos de caixa, nem sempre é gerador de caixa
+* Ainda é uma empresa em andamento e está começando um negócio
+
+### O que é uma Startup?
+* Hoje em dia Startups não são apenas coadjuvantes, na verdade se tornaram protagonistas e alguns estão até com capital aberto na bolsa
+
+* Modelo de Negócio Inovador (Problema?)
+* Clientes que usam e pagam pela solução
+* Insights e Implantação (não ideias)
+* Escalável
+
+* Empresa começa a produzir e depois vende
+* Startup costuma ter a ideia, valida aquele produto começando com poucos clientes e depois cria um MVP
+  * Convence sobre aquele produto e depois começa a vender o produto
+
+
+### Avaliando uma Startup
+* Método [Berkus](https://berkonomics.com/): para empresas com capacidade de gerar resultado de até 20 milhões de dólares dentro de 5 anos
+* Métodos dos fatores de Risco
+* Avaliação por Scorecard
+* Método de Negociações Comparáveis
+* Valor Contábil
+* Valor de Liquidação
+* Fluxo de Caixa Descontado: geralmente para Startups em estágios mais avançados
+* Método First Chicago
+* Método Venture Capital
+
+
+### Valuation Startup - BERKUS
+* CAC/LTV acima 5x: Custo de Aquisição por Clientes dividido por Loan to Value
 
 
 ## Referências e Observações
