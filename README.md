@@ -334,8 +334,6 @@ R: Automação
   * Análise e evolução constante
 
 
-
-
 ## Observações e Referências
 * [O que é o AWS CloudFormation?](https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/Welcome.html)
 * [Cloudflare](https://www.cloudflare.com/pt-br/)
@@ -343,3 +341,305 @@ R: Automação
 * [AWS - Well Architected Framework](https://aws.amazon.com/architecture/well-architected)
 * [Azure - Well Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
 * [Google - Well Architected Framework](https://cloud.google.com/architecture/framework)
+
+
+
+# Infra As Code (IAC) II
+## Arquitetura da Infraestrutura
+### Rede Pública
+* VPC pública com: 
+  * Banco de dados -> 3 Máquinas EC2 -> Load Balancer que está conectado na Internet
+* Intenção de expor a aplicação na Internet
+
+### Rede Privada
+* Objetivo de aproveitar as vantagens que a nuvem está oferecendo, mas o acesso precisa estar restrito e seguro
+
+
+### Rede Híbrida
+* VPC Privada ser intermediária, ou seja, temos a rede privada on-premises e a VPC privada e fazer a integração da VPC privada com a VPC pública, para integrar certas informações
+  * Por exemplo, e-commerce: o e-commerce em si tem toda a aplicação independente e está em uma VPC pública, e todo o sistema ERP em uma VPC privada
+
+
+### Sincronização Privado/Público
+* Integração direta via API, pelo um middleware rodando dentro da VPC privada que faz a requisição para a aplicação online, porém a sincronização de dados só vai acontecer quando esse aplicativo for executado.
+  * Ou seja, se executar demais podemos sobrecarregar a API e se executar de menos, podemos perder a sincronização da dados críticos
+
+* Podemos usar o S3 e fazer essa sincronização em lote
+* Podemos usar uma fila de eventos do SQS (fila de mensageria)
+* Podemos usar uma fila de eventos do SNS (broker de mensageria)
+
+* A fila de mensageria coloca as mensagens em uma fila de processamento e do outro lado um worker, que fica processando em background, esse worker vai pegar a tarefa que está na fila de tarefas e vai executar a tarefa
+* O broker de mensagens a mensagem entra em uma fila de distribuição, ou seja, um hub de distribuição
+  * Sendo assim, no SQS nós garantimos que um único processo vai executar aquela tarefa, reduzindo a duplicidade. Se o worker falhar, ele devolve na fila e o próximo worker pega
+  * No caso do broker, SNS, ele vai jogar em um hub e ela vai ser distribuída para todo mundo que estiver ouvindo
+* Quanto maior mensagem, mais é cobrado
+
+* Como usar? 
+  * Fizemos um pedido no e-commerce, esse pedido dispara uma mensagem no SQS informando o ERP que existe um batch relacionado a esse pedido no S3. O worker local pegou essa mensagem no SQS, executa a tarefa e pega o arquivo no S3 que tem todos os dados a respeito daquele pedido. Ou seja, o tamanho da mensagem é só o evento informando o worker, assim economizamos a cobrança. 
+
+
+### Sincronização Público/Privado
+* S3
+* SQS
+* Híbrido
+
+
+## Arquitetura de software
+### Domain Driven Design
+* Um modelo de desenvolvimento de software
+* Domínio: conjunto de regras de negócio que regem o funcionamento de determinado sistema
+* Persistence: são dados, ou seja, o banco de dados fica fora da aplicação. A aplicação não pode ficar amarrada a esse banco de dados, caso seja necessário fazer uma migração
+
+
+### Micro Serviços
+* Escala sobre demanda cada parte da aplicação
+* Equipes multidisciplinares garantindo que todos tenham visão da regra de negócio
+* Criar cluster específicos diferentes
+* É possível paralelizar os deploys por equipes
+
+#### Por onde Começar?
+* Monolithic architecture
+* Microservice architecture
+* Decompose by business capability
+* Decompose by subdomain
+* Self-contained Service
+* Anti-corruption layer
+* Database per Service
+* Shared database
+* Command-side replica
+* API Composition
+* CQRS
+* Domain event
+* Event sourcing
+* Transactional outbox
+* Transaction log tailing
+* Consumer-driven contract test
+* Consumer-side contract test
+* Service component sest
+* Multiple service instances per host
+* Service instance per host
+* Service instance per VM
+* Service instance per Container
+* Serverless deployment
+* Service deployment platform
+* Microservice chassis
+* Externalized configuration
+* Service Template
+* Remote Procedure Invocation
+* Messaging
+* Domain-specific protocol
+* Idempotent Consumer
+* API gateway
+* BAckend for front-end
+* Client-side discovery
+* Server-side discovery
+* Service registry
+* Self registration
+* 3rd party registration
+* Circuit Breaker
+* Access Token
+* Log aggregation
+* Application metrics
+* Audit logging
+* Distributed tracing
+* Exception tracking
+* Health check API
+* Server-side page fragment composition
+* Client-side UI composition
+
+
+## Ferramentas de IaC
+### Gestão de infraestrutura como código
+* **SDK**
+  * Um kit para desenvolvedores de software, é uma biblioteca que contém wrappers que são facilitadores. Ou seja, podemos instalar esses SDKs na nossa aplicação e ele mesmo irá resolver diversos processos como, por exemplo, renovação de token
+  * O objetivo principal é para interagir com a infraestrutura
+    * Por exemplo, manipular a fila do SQS
+* **CDK**
+  * Gerenciar infraestrutura
+  * Preparação para trabalhar com templates
+  * Bloco de configurações separado do código
+  * Desenvolvido em cima do SDK
+* **CloudFormation**
+  * Template de parametrizações
+  * Desenvolvido em cima do CDK
+* **Terraform**
+
+
+### SDK (Software Development Kit)
+* Bibliotecas em várias linguagens
+* Documentação abrangente e detalhada
+* Integração direta com a aplicação
+* Gere a infraestrutura
+* Interage com as funcionalidades dos serviços
+* Compatibilidade com TODOS os serviços AWS
+* Curva de aprendizagem e implantação alta
+
+
+### CDK (Cloud Development Kit)
+* Biblioteca em várias linguagens
+* Documentação abrangente e detalhada
+* Integração direta a aplicação
+* Gere a infraestrutura
+* NÃO Interage com as funcionalidades dos serviços
+* Compatibilidade com TODOS os serviços AWS
+* Curva de aprendizagem alta
+* Curva de implantação média
+
+
+### CloudFormation
+* Independente de linguagem
+* Baseado em templates JSON e YAML
+* Documentação abrangente e detalhada
+* Executado a partir de command line, IDE's e Console AWS
+* Gere a infraestrutura
+* NÃO Interage com as funcionalidades dos serviços
+* Compatibilidade com a maioria dos serviços AWS
+* Curva de aprendizagem média
+* Curva de implantação muito baixa
+
+
+### TerraForm
+* Independente de linguagem
+* Baseado em templates JSON e YAML
+* Documentação abrangente e detalhada
+* Executado a partir de command line, IDE's
+* Gere a infraestrutura
+* NÃO Interage com as funcionalidades dos serviços
+* Compatibilidade limitada com serviços AWS
+* Curva de aprendizagem média
+* Curva de implantação muito baixa
+
+
+### CloudFormation Designer
+* [Visão geral da interface do AWS CloudFormation Designer](https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer-overview.html)
+
+
+### Estrutura de Projetos com IaC
+* **Versionamento (Código):**
+  * Git
+  * Controle de versão de código
+  * Controle de versão de software
+  * Rollback
+  * Recuperação de catástrofe e mitigação de danos
+  * Controle de qualidade (code review)
+  * Recuperação point-in-time
+  * Responsabilidade
+  * Distribuição de Responsabilidades
+  * Trabalho simultâneo/Timelines
+  * Sub-modules
+  * Comutação
+  * Automação
+  * Testes
+  * Pipelines/Deploys
+* **Versionamento (Infraestrutura):**
+  * Tudo que código oferece
+  * Versionamento de infraestrutura
+  * Rollback junto com a aplicação
+  * Pipelines/Deploys Automatizado
+  * Teste e implantação com Zero Downtime (Blue/Green, Rolling, etc)
+  * Garantia de integridade com a versão testada e produção
+  * Autonomous Recovery
+  * Auto-scaling em níveis de cluster, ambiente e região
+  * Migração de região em um click
+  * Multi-região com balanceamento DNS
+  * *Multi-Plataforma
+  * Versionamento de estrutura de dados
+* **Testes:**
+  * Teste Unitário
+  * Teste Funcional
+  * Teste Operacional
+  * Teste de Stress: quando está além da capacidade, qual o comportamento irregular está apresentando e reagindo. Abre brechas de segurança, corrompe dados etc
+  * Teste de Carga: avalia como a aplicação está se comportando, inclusive sobre a escalabilidade
+  * *Homologação
+  * Automação de Testes
+* **Automação de deploys / pipelines:**
+  * Testes
+  * Flags
+  * Procedimentos de sequenciamento, deploy e rollback
+  * Governança e responsabilidade
+  * Controle de qualidade
+  * Integração com infraestrutura
+* Version Control -> Build -> Unit Test -> Deploy to Test -> Auto Test -> Deploy to Production -> Measure/Validate -> Feedback -> Version Control...
+* **Monitoramento:**
+  * Coleta contínua de métricas da aplicação
+  * Coleta contínua de métricas da infraestrutura
+  * *Auditoria de dados
+  * Coleta e Análise de dados temporais de APIs
+  * Uso de machine learning para tomada de decisões automatizadas
+  * ML para combate reativo de catástrofes
+  * ML para combate reativo de ataques
+  * ML para tomadas de ações inteligentes sobre escalabilidade
+* **Plano de contingência:**
+  * Governança estratégica, operacional, financeira e de crises
+  * Conhecimentos profundos da aplicação e das regras de negócios
+  * Documentação detalhada e atualizada
+  * Entendimento profundo do funcionamento do ecossistema tecnológico
+  * Integração íntima das equipes técnicas e de negócios
+  * Integração íntima das equipes de desenvolvimento e infraestrutura (DevOps)
+  * Planos de ação conjuntos
+  * Automação de contingências
+* **Autorreparação:**
+  * Escalonamento automático para mitigação de danos
+  * Redução de danos e prejuízos financeiros e reputacionais
+  * Recuperação automática de desastres
+  * Rollback automático
+  * Detecção e reação automática a falhas operacionais
+  * Detecção e reação automática a ataques
+  * Redução dos custos de mão de obra
+* **Análise e evolução constante:**
+  * Mudanças constantes de tecnologia
+  * Evolução e surgimento de novas soluções
+  * Segurança
+  * Estabilidade
+  * Confiabilidade
+  * Mudanças de escopos de projetos
+  * Mudanças de paradigmas
+  * Mudanças de equipes
+  * *Motivação da equipe
+  * *Constância e padronização
+
+
+### Por onde começar com IaC?
+* Passo a passo das necessidades:
+  * Conheça, respeite, motive e prepare sua equipe
+  * Conheça e documente profundamente as regras de negócios
+  * Conheça, meça e documente seu Sistema
+  * Conheça intimamente seu provedor Cloud
+  * Teste TUDO
+  * Otimize
+  * Automatize
+  * IaC
+  * Evolua
+
+
+### Dados vs Computação
+* Dados precisam de backup
+* Computação precisa de versionamento
+
+* Dados precisam de sincronização
+* Computação precisa de desacoplamento
+
+* Dados precisam de persistência
+* Computação precisa de independência
+
+* Dados precisam de durabilidade
+* Computação precisa de regeneração
+
+
+### Para guardar na memória
+* Seja granular
+* Seja desacoplado e persistente
+* Seja testável
+* Seja automático
+* Seja evolutivo
+* E será Cloud IaC
+
+
+## Observações
+* [Martin Flower](https://martinfowler.com/)
+* [What are microservices?](https://microservices.io/)
+
+* Em Cloud substituímos sessão por access token, porque sessão é muito pesado, pois são vários dados que a maior parte do tempo não usamos que são armazenados ou consumidos durante a aplicação
+  * A sessão guarda todos os acessos do usuário, porém isso dificultava a troca de sessão em múltiplos servidores
+  * Access token faz uma consulta para verificar se o usuário tem acesso somente àquele método
+
