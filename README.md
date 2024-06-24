@@ -15,6 +15,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Fundamentos da Segurança da Informação - Rodolfo Ipolito Meneguette](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/fundamentos-da-segurança-da-informaçao)
 * [Aula: Investimento e Valuation de Empresas - Fabiano Guasti Lima](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/investimento-valuation-de-empresas)
 * [Aula: Infra As Code (IAC) - Weslei Nilton Milan](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/infra-as-code-iac)
+* [Aula: Design Thinking - Edgard Charles Stuber](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/design-thinking)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
