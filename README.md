@@ -808,3 +808,597 @@ Projeto de um carro familiar
 ## Observações e Referências
 * [Ask Nature](https://asknature.org/)
 * [Board of Innovation - AI Tools for Innovation](https://www.boardofinnovation.com/blog/ai-tools-for-innovation/)
+
+
+
+# Design Thinking II
+## Bloco 3
+### Oitava ferramenta: Prototipagem
+* Protótipos de baixa resolução: como transformamos ideias em realidade?
+* [Fast Food](https://www.youtube.com/watch?v=2G7hSOV4egs) tinha uma **hipótese**: eliminação da espera
+  * Caso do Mc Donald's: trecho de um filme
+
+
+#### Função dos Protótipos
+* **Novas ideias** e como **comunicá-las**
+* Aberto a novas ideias:
+  * "sim...e..." ao invés de "sim...mas..."
+* Procure tornar as ideias tangíveis - protótipos de baixa resolução e muita experimentação
+* **Sugestão:** reduzir o uso de PPTs como na Amazon (Jeff Bezos) e GIM (Lou Gerstner)
+
+
+#### Protótipos ou modelos: para que servem?
+* Tangibilizar uma ideia
+* Instrumentos de comunicação
+* Vários níveis de protótipos:
+  * Porcótipo
+  * Provótipo
+  * Importante que sejam de baixa resolução
+* Querem avaliar nossas hipóteses
+
+
+#### Tipos de protótipos
+* Desenho
+* Storyboard
+* Produtos 3D
+* Aplicativo
+* Mapa Mental
+* Simulação
+* Vídeo
+* Canvas
+
+
+#### BMG Canvas como um protótipo de modelo de negócios
+* Para criar ou repensar negócios constantemente
+* Canvas é uma ferramenta para visualização de novos modelos de negócios
+* Não substitui o plano de negócios
+* Melhora a comunicação visual dos conceitos
+
+
+##### Modelo
+* [Business Model Canvas](https://cdn.prod.website-files.com/64830736e7f43d491d70ef30/64c7c201a7f4a5e05072cbe1_A3-Business%20Model%20Canvas-2023.png)
+* à esquerda é **Eficiência**
+* à direita **Valor**
+
+
+##### Função da ferramenta
+* Partimos de uma oportunidade, de um problema ou de uma hipótese:
+  * Costuma-se começar pelo cliente e em seguida pela proposta de valor
+  * Uso de post-its para poder movê-los com facilidade
+  * O propósito deste "protótipo" é testar hipóteses
+  * Abordagem sistêmica e não linear
+
+
+##### Quatro questões importantes
+* Inicialmente - **quem** é o cliente?
+* **O que** será proposto de valor?
+* **Como** será feito?
+* **Quanto** vai custar e quanto irá gerar de lucro?
+
+
+##### Protótipos de baixa resolução
+* Transformando ideias em realidade
+  * Errar cedo
+  * Construir novas ideias a partir de problemas encontrados
+
+
+##### Importância da prototipagem
+* Erra cedo, sendo assim, o custo de um erro é bem pequeno
+* E o risco tende a diminuir conforme o número de protótipos aumentam, pois estão errando e aprendendo muito, o que acaba refinando o produto
+
+* Dyson testou mais de 5.000 protótipos para desenvolver um aspirador sem saco de coleta
+  * Sendo assim, quando alguém imitar seu produto, você pode lançar algo renovador novamente em seguida
+
+
+#### O que podemos prototipar?
+* O protótipo é uma versão rápida de uma ideia
+* Podemos prototipar produtos, serviços e aplicativos
+* Com a atual velocidade das mudanças os protótipos são cada vez mais importante para experimentação
+* O protótipo de baixa resolução ajuda a avaliar uma ideia
+
+
+![Design Thinking - University of St. Gallen](./assets/design-thinking-university-of-st-gallen.png)
+
+
+* O valor de uma ideia é ZERO, a menos que ela possa ser comunicada e criticada
+
+
+##### Testes dos Protótipos
+* Avalie sua ideia, ou seja, sua hipótese
+
+* Deixem os usuários interagirem com os protótipos
+* Observem a experiência
+* Conectem-se com o usuário com empatia
+* Não se apaixonem pelas ideias
+  
+
+##### Feedback do protótipo
+* O que funcionou?
+* Ideias
+* O que pode ser melhorado?
+* Perguntas
+
+
+##### Feedback: para que serve?
+* para tornas as hipóteses públicas
+* para refinar as ideias
+* para a prender com o erros
+* para selecionar os melhores atributos
+* para refinar uma ideia e levar ao FabLab
+* este é o embrião do MVP (Produto Mínimo Viável)
+
+
+#### MVP serve para validar uma hipótese
+* é o mínimo que precisamos para lançar um produto/serviço
+* as melhorias serão implementadas aos poucos
+* é importante, pois leva o inovador rapidamente para a ação (menos planejamento e mais ação)
+
+
+#### Exemplos de MVP
+* Produtos
+* Serviço
+* Experiência
+* Aplicativo
+
+
+#### Apresentação dos protótipos
+* Pitch
+
+
+#### Grandes consultorias
+* McKinsey comprou a Lunar
+* Accenture comprou a Fjord
+* Deloitte comprou a Doblin
+* Capgemini comprou a Frog
+
+
+#### Liderança Estratégica
+* Foco em excelência operacional e geração de valor
+  * **Rotinas**
+  * **Implementação**
+  * **Tomadas de decisões:** já temos os caminhos possíveis
+  * **Resolução de problemas:** um gap que não está sendo atendido. Situação atual e situação desejada
+
+Durante resolução de problemas tomamos decisões, mas não do contrário
+
+
+
+### Formação dos times de alta performance (diversidade)
+* Especialidade
+* Papel funcional de cada membro
+* Personalidade ou estilo de aprendizagem
+
+
+
+### Avaliação do estilo de aprendizagem (KOLB)
+
+![Avaliação do Estilo de Aprendizagem](./assets/avaliacao-do-estilo-de-aprendizagem.png)
+
+![Aprendizagem](./assets/aprendizagem.png)
+
+
+### Myers-Briggs Type Indicator (MBTI)
+* **Analistas** (Intuitivos e Reacionais)
+  * Racionais
+  * Imparciais
+  * Excelência intelectual
+* **Diplomatas** (Intuitivos e Emocionais)
+  * Empáticos
+  * Diplomáticos
+  * Idealismo passional
+* **Sentinelas** (Observadores e Julgadores)
+  * Pragmáticos
+  * Organizados
+  * Seguros
+  * Estáveis
+* **Exploradores** (Observadores e Prospectadores)
+  * Espontâneos
+  * Ingênuos
+  * Flexíveis
+
+
+### Competências do gestor séculos XXI
+* [T-Shaped](https://www.pontotel.com.br/profissional-t-shaped/) é uma metáfora para descrever as competências demandadas:
+  * **Amplo:** capacidade de trabalhar fora da sua área específica
+  * **Profundo:** área funcional, disciplina ou especialidade
+
+
+#### Dificuldades de implementação do DT (Design Thinking)
+* Modelos mentais dos colaboradores e cultura organizacional
+* O processo todo é demorado
+* Gestores tendem a ser mais objetivos
+* Envolvimento da equipe com pesquisas de campo
+* Disputa de agenda (rotinas x projeto)
+* Não pode ficar apenas em uma área
+* Importância dos ganhos rápidos
+* Muitas iterações
+
+
+* **Para cada problema complexo há uma resposta que é clara, simples e errada. (Citação de H. L. Mencken)**
+ 
+* Ciência é o maior empreendimento humano que navega na **incerteza** e busca fatos e dados para resolver problemas complexos.
+
+
+#### Postura do cientista
+* Curiosidade
+* Imaginação
+* Erro faz parte do processo cognitivo
+* Otimismo
+
+
+#### Postura do gestor
+* Certezas
+* Conhecimento objetivo
+* Replicabilidade
+
+
+## Bloco 4
+### Experiência dos colaboradores (Ex)
+* **Simon Sinek:** "Se você não entende de gente, você não entende de negócios"
+ 
+
+### Evolução da preocupação com os colaboradores
+* **Utilidade:** o que os colaboradores precisam entregar?
+* **Produtividade:** o que os colaboradores precisam para trabalhar melhor e mais rápido?
+* **Engajamento:** como podemos deixá-los felizes para melhorar sua performance?
+* **Experiência:** como podemos criar uma empresa onde as pessoas **queiram estar** vs **precisam estar**?
+
+
+### Customer Experience Revolution
+* Livro: The Customer Experience Revolution: How Companies Like Apple, Amazon, and Starbucks Have Changed Business Forever
+
+
+### Mas e o People Experience Revolution?
+* Richard Branson: "Os **clientes** naõ vêm primeiro. Os funcionários vêm em primeiro lugar. Se você cuidar de seus funcionários, eles cuidarão dos **clientes**."
+
+* Employee Experience começa pelos **problemas**
+
+
+### Employee Experience
+* Um projeto de experiência do colaborador considera:
+  * A atração e contratação
+  * O momento que ele ingressa na organização (onboarding)
+  * Desenvolvimento do colaborador
+  * Desligamento
+* Cultura + Tecnologia + Espaço Físico = Employee Experience
+* Inovação centrada no colaborador
+
+
+### Jornada Employee Experience
+* Entrevistas etnográficas com diversas pessoas
+* Análise e síntese dos dados coletados
+* Geração e seleção de ideias em sessões de cocriação. Essas hipóteses serão os protótipos.
+* Coleta de feedbacks dos protótipos e refino dos protótipos
+* Montagem dos MVPs para elaboração do plano de ação para implementar as soluções
+
+
+### Dificuldades mais frequentes:
+* Os planos de ação visam mitigar as barreiras e frustrações encontradas
+* Entretanto, e empresa precisa de **determinação e disciplina** para implementar as hipóteses geradas ao longo do projeto
+
+
+### Sugestões para os projetos de Ex
+* As empresas que querem atrair e reter seus talentos precisam:
+  * **Ouvir** seus colaboradores
+  * Levantar os grandes **questionamentos** a partir dos dados coletados
+  * Convidar os colaboradores a gerarem alternativas para resolver os problemas identificados (**protagonismo**)
+  * Mimetizar a natureza, ou seja, promover a **diversidade**
+    * Observar a natureza é extremamente importante
+    * A natureza é diversa, basta olhar uma floresta
+    * A natureza tem um ecossistema (para de ter linearidade)
+    * Interdependência
+    * Eficiência energética, baixar energia para não ter atrito
+    * Feedbacks: os sistemas complexos precisam ter feedbacks
+    * Homeostase: ponto de equilíbrio
+  * Desenvolver **soft skills**
+  * Acolher o **erro** e a **experimentação**
+  * Incentivar a **curiosidade** e a **imaginação** das pessoas
+
+
+### Barreiras e frustrações que são recorrentes:
+1. Comunicação
+2. Reuniões
+3. Gestão
+4. Reconhecimento
+5. Desdobramento da estratégia
+6. Transparências nas relações
+7. ...
+
+
+### Exemplo de plataformas digitais para Ex
+* Pulses by Gupy oferecem:
+  * Pesquisa de clima
+  * Engajamento
+  * Experiência do colaborador
+  * Ferramenta de predição de saída voluntária (IA)
+
+
+### Quanto custa o desengajamento
+* Alto Turnover
+* Absenteísmo
+* Baixa produtividade
+* Acidentes de trabalho
+O custo do desengajamento para a economia brasileira é estimado pela Gallup em **R$ 150 bilhões por ano** e o impacto global é de **U$ 7,8 trilhões por ano** (perto de 11% PIB global)
+
+
+### Métodos tradicionais dão conta do recado?
+* Métodos tradicionais são **ineficientes** para tempos atuais
+  * Tomam muito tempo
+  * Colaboradores não são ouvidos
+  * Desconectados da realidade
+
+
+### Metodologia Pulses
+* **Pulsos semanais 8 a 12 perguntas (1 a 2 minutos)**
+  * eNPS
+  * NPS
+  * Engagement Index
+  * Instrumento Pulses
+* **Instrumento Pulses**
+  * Total de 39 fatores
+  * Agrupados em 12 dimensões
+    * Alinhamento com a empresa
+    * Embaixadorismo
+    * Inovação
+    * Bem-estar
+    * Estrutura
+    * Justiça
+    * Carreira
+    * Feedback e reconhecimento
+    * Liderança
+    * Crescimento pessoal
+    * Felicidade
+    * Relacionamento interpessoal
+  * Diagnóstico contínuo com até 125 hipóteses explicativas
+
+
+### Nona ferramenta: Plano de ação (implementação)
+* Elaboração do Plano de Ações (5w2h) com as recomendações
+  * Que ações priorizar num plano de implementação?
+  * Quais atributos dos protótipos testados serão incorporados ao MVP
+* A seguir 3 alternativas para elaborar um plano de ação
+  * Usando a Matriz GUT
+    * Listar todos os atributos aprovados pelas pessoas
+    * Aplicar a matriz GUT para estabelecer as prioridades das ações
+    * Matriz **GUT** (**G**ravidade, **U**rgência e **T**endência)
+      * **Gravidade** é o impactor do problemas sobre as coisas, pessoas, resultados, processos ou organizações e efeitos que surgirão a longo prazo, caso o problema não seja resolvido
+      * **Urgência** é a relação com o tempo disponível ou necessário para resolver o problema
+      * **Tendência** é o potencial de crescimento do problema, a avaliação da tendência de crescimento, redução ou desaparecimento do problema
+    * **Matriz GUT ou Matriz de Priorização**
+      * Ajuda a construir um forte **argumento** de apoio
+      * Justifica a **escolha** de um determinado problema para ser resolvido
+        * Nota 5 - extremamente grave - precisa de ação imediata - irá piorar rapidamente
+        * Nota 4 - muito grave - muito urgente - irá piorar a curto prazo
+        * Nota 3 - grave - urgente, merece atenção no curto prazo - irá piorar a médio prazo
+        * Nota 2 - pouco grave - pouco urgente - irá piorar a longo prazo
+        * Nota 1 - sem gravidade - pode esperar - não irá mudar
+      * Exemplo de priorização
+        * Orçamento anual não aprovado - G: 1, U: 3, T: 5, G x U x T = 15
+        * Planilha orçamentária ineficiente - G: 5, U: 5, T: 4, G x U x T = 100
+        * Descontrole no fluxo de caixa - G: 4, U: 4, T: 4, G x U x T = 64
+  * Usando impacto x custo
+    * Prioridades
+    * Segundo Plano
+    * Não perder tempo
+    * Não investir
+  * Usando esforço x impacto
+    * Complexos
+    * Descartar
+    * Prioritários
+    * Ver e agir
+* 5W2H:
+  * **o que:** qual ação?
+  * **porque:** porque ela dever ser implementada? resgatar causas do problema
+  * **quem:** responsável, equipe
+  * **quanto:** custo ou qualidade
+  * **como:** atividades, processo
+  * **quando:** data, cronograma
+  * **onde:** local, departamento
+
+
+#### Dificuldade comum nas empresas:
+* A implementação de projetos:
+  * Métodos ágeis
+  * Cascata
+
+
+#### Como garantir o sucesso na implantação das soluções?
+* **Envolva** as pessoas interessadas no problema para elaboração do plano (não somente as pessoas da equipe)
+* **Deixe claro o problema** definido no projeto - em vários momentos será necessário retomar esta definição
+* Um plano de ação deve conter as medidas prioritárias e suficientes para se atingir a **meta do projeto**
+* Verifique se **todas as causas priorizadas** em análise foram tratadas no plano de ação
+* Identifique os **recursos críticos** para execução do plano
+* Um plano de ação deve ser modificado sempre que necessário. **Um plano B pode ser necessário par algumas ações**
+* Deixe claro os **responsáveis por cada etapa** do trabalho
+* Desenvolva-o com firmeza. Ele representa o **conhecimento da equipe** sobre o problema estudado
+
+
+## Bloco 5
+* Inovações com I.A. (estudo da McKinsey 2020) - Potencial de geração de valor até 2030 (aprox. $15T)
+  * $15t **valor total**
+  * $6t **Vendas e Marketing**
+  * $5t **Gerenciamento da cadeia de valor**
+  * $900m Risco
+  * $200 Finanças
+  * $200m Recursos Humanos
+  * $200m Serviços operacionais
+  * $2t Demais (P&D, estratégia)
+
+
+### Uso do método tradicional com auxílio de IA
+* **Identificação e enquadramento do problema:**
+  * **Design Thinking:** Tenha empatia com os usuários, entenda seus pontos fracos, descubra necessidades não atendidas e defina o espaço do problema onde as soluções de IA podem ser valiosas.
+  * **IA:** análise de grandes conjuntos de dados (feedback de clientes) para identificar padrões de problemas que podem não ser óbvios para os humanos. Isso pode ajudar na definição do escopo do projeto.
+* **Geração de ideias e prototipagem:**
+  * **Design Thinking:** Faça brainstorming de soluções, esboce conceitos e crie protótipos de baixa fidelidade ara feedback e iteração rápidos.
+  * **IA:** as ferramentas generativas de IA podem sugerir variações de design, criar pontos de partida inspiradores ou ajudar a visualizar possíveis recursos alimentados por IA.
+* **Teste e coleta de dados:**
+  * Design Thinking: Sessões de testes de usuários com protótipos para ver como as pessoas
+interagem e fornecer feedback qualitativo.
+  * IA: monitore os dados de interação do usuário (padrões de cliques, tempo gasto na tarefa) para
+coletar métricas quantitativas sobre o desempenho do design e dos elementos de IA.
+* **Refinamento e aprendizagem:**
+  * **Design Thinking:** Analise o feedback e repita os protótipos, concentrando-se na experiência do usuário e na intuitividade dos recursos alimentados por IA.
+  * **IA:** Use os dados coletados para treinar novamente os modelos de aprendizado de máquina, melhorando a precisão, as previsões ou as recomendações da IA.
+
+
+### Exemplos de aplicação de clientes sintéticos
+* **Serviços Financeiros:** Bancos e seguradoras criam perfis de clientes realistas com dados demográficos, comportamentos e históricos de crédito variados para simular como diferentes segmentos podem interagir com uma nova oferta.
+* **Varejo:** empresas de comércio eletrônico geram clientes sintéticos para otimizar o design e a navegação do site. Esses clientes sintéticos podem simular diferentes caminhos de compra, ajudando a identificar pontos de atrito e áreas de melhoria.
+* **Saúde:** As empresas farmacêuticas utilizam pacientes sintéticos para realizar simulações de ensaios clínicos. Testam a eficácia dos medicamentos e os potenciais efeitos secundários em diversas populações de pacientes (simuladas).
+* **Pfizer:** Durante o desenvolvimento de 10 novos programas de medicamentos, a Pfizer utilizou pacientes sintéticos para ensaios clínicos em simulados por computador. Eles afirmam que isso reduziu os custos de desenvolvimento em mais de US$ 600 milhões.
+* **Banco do Reino Unido:** Testam a resistência dos seus sistemas contra possíveis cenários de fraude e identificam vulnerabilidades antes que possam ser exploradas no mundo real.
+* **Varejista on-line:** Gera dados sintéticos de clientes para testar a escalabilidade e a facilidade de uso de seu site durante os períodos de pico de compras, garantindo que ele possa lidar com picos de tráfego.
+
+
+### Exemplos de aplicação de gêmeos digitais
+* **Manufatura:** Empresas como a Siemens criam gêmeos digitais de fábricas inteiras. Sensores em equipamentos reais alimentam dados no gêmeo digital, permitindo monitoramento em tempo real, manutenção preditiva e simulações para otimizar os processos de produção.
+* **Automotivo:** Os fabricantes de automóveis usam gêmeos digitais de veículos para projeto e testes. Eles podem simular cenários de colisão, aerodinâmica e desgaste sem a necessidade de protótipos físicos extensos, economizando tempo e recursos.
+* **Cuidados de saúde:** Gêmeos digitais de pacientes estão sendo explorados, com base no histórico médico, dados de imagem e informações contínuas de sensores. Isso poderia ajudar a personalizar planos de tratamento, realizar simulações de como um paciente pode responder a diferentes medicamentos e, potencialmente, até mesmo prever riscos futuros à saúde.
+**BMW:** A BMW criou um gêmeo digital de toda a sua fábrica em Regensburg, na Alemanha. Este modelo virtual integra dados em tempo real sobre desempenho de equipamentos, fluxo logístico e cronogramas de produção, permitindo otimização e agilidade na tomada de decisões.
+**Siemens & Bentley Systems:** Esta parceria desenvolveu um gêmeo digital de um sistema completo de água e esgoto para uma grande cidade. O gêmeo permite monitoramento, análise preditiva para evitar falhas e simulação de mudanças na infraestrutura antes de serem implementadas.
+**Apollo Hospitals:** Explorando a tecnologia "Digital Twin of a Patient". A integração de exames médicos, registros de saúde e dados de sensores pode permitir previsões e simulações personalizadas para otimização do tratamento.
+
+
+### Exemplos: empresa aérea KLM
+1. **Assistente virtual – BlueBot (BB):** Melhorar a experiência de atendimento ao cliente e fornecer suporte 24/7.
+  * **BlueBot (BB):** assistente virtual para interagir com os clientes através de várias plataformas, incluindo redes sociais e aplicativos de mensagens como Facebook Messenger e WhatsApp (reservas de voos, informações sobre bagagem, atualizações de status de voos e respostas a perguntas frequentes).
+2. **Análise de sentimento e feedback de clientes**
+  * **Análise de sentimento:** analisar comentários e feedbacks deixados por clientes em plataformas de redes sociais, formulários de feedback e avaliações online.
+  * **Identificação de padrões:** pontos frequentes de elogios ou críticas, permitindo que a KLM aja de forma proativa para melhorar seus serviços.
+3. **Otimização de rotas e combustível:** Melhorar a eficiência operacional, reduzindo custos e o impacto ambiental.
+  * **Otimização de rotas:** analisar voos e otimizar rotas, resultando em menor consumo de combustível e tempos de voo mais curtos.
+  * **Previsão de manutenção:** baseando-se em dados históricos e de desempenho, evitando atrasos e cancelamentos inesperados.
+4. **Personalização da experiência do cliente**
+  * **Recomendações personalizadas:** upgrades, seleção de assentos e ofertas de entretenimento.
+  * **Comunicações proativas:** Envio de notificações personalizadas aos clientes sobre mudanças no voo, ofertas especiais e dicas de viagem com base em suas preferências e histórico de viagens.
+
+
+### Lufthansa: formação de líderes orientados por dados
+* **Desafios:** Resistência à mudança, falta de alfabetização em dados.
+* **Estratégia:** Programa de liderança em dados com seis papéis principais.
+* **Papéis de Liderança em Dados**
+  * Visionário de Dados
+  * Transformador de Dados
+  * Tomador de Decisões com Dados
+  * Motorista de Dados
+  * Colaborador de Dados
+  * Coach de Dados
+* **Módulos de Treinamento**
+  * **Spark:** Importância dos dados e IA.
+  * **Inspire:** Narrativas inspiradoras.
+  * **Activate:** Habilidades de liderança para transformação.
+* **Resultados e dicas**
+  * **Resultados esperados:** Melhor uso de dados, adoção rápida de IA e maior colaboração.
+  * **Dicas:** Definir papéis, cocriar o programa, aumentar a conscientização e inspirar os líderes.
+
+
+### Outros exemplos
+#### Coca-Cola
+* **Desafio:** Criar novos produtos que atendam melhor às preferências dos consumidores.
+* **Solução de IA:** analisar dados de consumidores, incluindo feedback de redes sociais, vendas e preferências de sabor. A IA identificou novas combinações de sabores e ajudou a Coca-Cola a lançar produtos inovadores, como novas variações de suas bebidas.
+* **Impacto no Design Thinking:** A IA auxiliou na fase de ideação e prototipagem, gerando novas ideias de produtos que foram posteriormente testadas e refinadas com base no feedback dos consumidores.
+
+
+#### Procter & Gamble (P&G)
+**Desafio:** Desenvolver produtos de cuidados pessoais que atendam melhor às necessidades dos consumidores.
+* **Solução de IA:** P&G utiliza IA para analisar grandes volumes de dados de consumidores, incluindo pesquisas de mercado e feedback de produtos. A IA ajuda a identificar lacunas no mercado e oportunidades para novos produtos.
+* **Impacto no Design Thinking:** A IA apoia as fases de imersão e definição ao fornecer insights profundos sobre as necessidades dos consumidores, e na fase de ideação ao gerar ideias para novos produtos.
+
+
+#### H&M
+* **Desafio:** Desenvolver coleções de moda que reflitam as tendências e preferências dos consumidores.
+* **Solução de IA:** analisar dados de tendências de moda, comportamento dos consumidores e feedback de produtos. Isso ajuda a identificar tendências emergentes e a desenvolver coleções de moda que atendam às expectativas dos consumidores.
+* **Impacto no Design Thinking:** A IA é utilizada na fase de imersão para entender as tendências de mercado e na fase de ideação para gerar novas ideias de design de moda.
+
+
+#### Nike
+* **Desafio:** Criar designs de calçados mais personalizados e inovadores.
+* **Solução de IA:** Utilização de IA para analisar tendências de moda, feedback de clientes e dados de vendas. A Nike desenvolveu o Nike Fit, uma solução de IA que escaneia os pés dos clientes para recomendar o tamanho ideal de calçado.
+* **Impacto no Design Thinking:** A IA foi usada na fase de imersão para entender as necessidades dos clientes e na fase de prototipagem para criar produtos altamente personalizados e inovadores.
+
+
+### Equipamentos autônomos de inovação
+* **Insights baseados em dados:**
+  * Emprega IA e aprendizado de máquina para analisar grandes conjuntos de dados, incluindo dados internos, tendências de mercado, feedback de clientes e inteligência da concorrência.
+  * Identifica padrões, oportunidades e ameaças potenciais que podem não ser imediatamente óbvias para os humanos.
+* **Geração e experimentação de ideias:**
+  * Usa algoritmos de IA para gerar uma ampla gama de soluções potenciais, muitas vezes combinando elementos de maneiras inesperadas.
+  * Facilita a rápida prototipagem e teste dessas ideias em escala, potencialmente em um ambiente simulado ou de baixo risco.
+* **Tomada de decisão automatizada**
+  * Emprega modelos orientados por IA para avaliar ideias e protótipos com base em critérios predefinidos e métricas de sucesso.
+  * Determina quais ideias justificam mais investimento, escalonamento ou dinamização, minimizando a necessidade de tomada de decisão manual.
+* **Autoaprendizagem e melhoria**
+  * Aprende continuamente com os dados gerados em cada experimento, refinando algoritmos e processos de tomada de decisão.
+  * O motor adapta-se ao longo do tempo, tornando-se cada vez mais eficiente na identificação de inovações promissoras e na eliminação das inviáveis.
+
+
+### Onde está se usando a automação na inovação
+* **Ideação baseada em IA:** ferramentas para geração de conceitos, aproveitando grandes conjuntos de dados para reconhecimento de padrões (por exemplo, na área de marketing ou nomenclatura de produtos)
+* **Análise preditiva:** identificação de tendências de mercado, necessidades não atendidas dos clientes ou possíveis interrupções nas quais os esforços de inovação devem se concentrar.
+* **Simulação e testes virtuais:** Testar protótipos em ambientes digitais antes de investir em recursos físicos.
+* **Experimentação automatizada:** Plataformas para projetar e executar múltiplas iterações de experimentos simultaneamente em um ritmo que os humanos não conseguiriam controlar.
+* **Tomada de decisões baseada em dados:** modelos de IA para avaliar quais ideias merecem mais recursos, com base em métricas de sucesso.
+
+
+### Exemplos de aplicação
+* [Foodpairing](https://www.foodpairing.com/) AI
+  * From insights to launch (and back)
+  * Insights
+  * Concept Generation
+  * Concept Validation
+  * Formulation & Packaging
+  * Launch
+
+* Industrias do alimento estão criando combinações com o apoio da IA
+
+
+### AB Inbev lança Beck's Autonomous
+* “A IA criou uma receita que usa produtos alemães locais e ingredientes 100% naturais”.
+* Depois de usar a IA para nomear a cerveja, criar um logotipo personalizado e projetar sua lata, a equipe da AB InBev revelou que também usou a IA para preparar todos os ativos para sua campanha publicitária, como gerar imagens e um vídeo rotativo 360 ° da lata.
+* O plano: "lançar um teste de 450 latas de Beck's Autonomous em três de nossos principais mercados - Reino Unido, Alemanha e Itália".
+
+
+### IKEA em parceria com SPACE10
+* Estão usando imagens de produtos das décadas de 70 e 80 para desenvolver um portfólio de novos produtos.
+* Para o gerente de inovação da Ikea, os projetos gerados por IA prenunciam a democratização do processo de design.
+* "Em vez de apenas permitir que os designers imaginem novas formas, qualquer pessoa pode se juntar ao processo desde o início", diz ele. “Isso convida mais pessoas para a fase conceitual.”
+* Porém, muitos modelos são impraticáveis (fisicamente)
+
+
+### Desafio Unilever usando IA
+* Primeira edição limitada, desodorante Lynx AI, alimentado por Inteligência Artificial.
+* São 46 Terabytes de dados, 6.000 ingredientes, 3,5 milhões de combinações possíveis.
+
+
+## Observações e Referências
+* [InVision](https://www.invisionapp.com/)
+* [UFPB - Aprendizagem](https://www.cchla.ufpb.br/aprendizagem/)
+* [Innovation as a Learning Process](https://www.youtube.com/watch?v=2G5OTWxHYnE)
+* [Avaliação de Personalidade](https://www.16personalities.com/br)
+* [Livro - The Customer Experience Revolution: How Companies Like Apple, Amazon, and Starbucks Have Changed Business Forever](https://a.co/d/0iUs1Z6J)
+* [Supermind Ideator](https://ideator.mit.edu/)
+* [O que é a tecnologia de gêmeos digitais?](https://aws.amazon.com/pt/what-is/digital-twin/)
+
+* **Existem 3 tipos de decisões:**
+  * **Operacionais:** serão ocupadas por inteligência artificial
+  * **Táticas:** interação humano e máquina para a máquina dar caminhos para o humano tomar a decisão
+  * **Estratégica:** é totalmente humana, pois é uma decisão sobre algo que não existe ainda
+
+* **Livros:**
+  * [UX Research com sotaque brasileiro: Ou sobre como fazer pesquisas com usuários no Brasil sem apegos acadêmicos ou erros do mercado](https://a.co/d/0iUblbrW)
+  * [As 10 Faces da Inovação](https://a.co/d/0jgMCUea)
+  * [A Arte da Inovação](https://a.co/d/0fG2gATX)
+  * [Confiança Criativa: Libere sua Criatividade e Implemente Suas Ideias](https://a.co/d/0i3vDXUO)
+  * [Biomimética](https://a.co/d/0fgc5woN)
+  * [The Opposable Mind: How Successful Leaders Win Through Integrative Thinking (English Edition)](https://a.co/d/0crkwyjQ)
+  * [Design de Negócios](https://a.co/d/000SA2e6)
+  * [The Design of Business: Why Design Thinking Is the Next Competitive Advantage](https://a.co/d/0d9BgwWi)
+  * [Design Thinking: uma Metodologia Poderosa Para Decretar o fim das Velhas Ideias](https://a.co/d/0bQh8ebx)
+  * [Design Thinking: Integrating Innovation, Customer Experience, and Brand Value](https://a.co/d/0aKy6xx9)
+
+
+* **Estudar ampliando os horizontes:**
+  * Pensamento sistêmico
+  * Experimentação
+  * Empirismo
