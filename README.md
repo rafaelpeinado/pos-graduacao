@@ -17,6 +17,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Infra As Code (IAC) - Weslei Nilton Milan](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/infra-as-code-iac)
 * [Aula: Design Thinking - Edgard Charles Stuber](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/design-thinking)
 * [Aula: Event Storming em Projetos de Software - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/event-storming-em-projetos-de-software)
+* [Aula: Tendências em Inteligência Artificial e Big Data - Fabiano Castello de Campos Pereira](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/tendencias-em-inteligencia-artificial-e-big-data)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
