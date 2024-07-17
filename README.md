@@ -19,6 +19,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Event Storming em Projetos de Software - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/event-storming-em-projetos-de-software)
 * [Aula: Tendências em Inteligência Artificial e Big Data - Fabiano Castello de Campos Pereira](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/tendencias-em-inteligencia-artificial-e-big-data)
 * [Aula: Engenharia de Dados - Jeronymo Marcondes Pinto](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/engenharia-de-dados)
+* [Aula: Técnicas de Machine Learning - Wilson Tarantin Junior](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/tecnicas-de-machine-learning)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
