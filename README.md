@@ -253,9 +253,159 @@ WHERE qualificação
 
 
 
+# Engenharia de Dados II
+## Introdução
+
+### Perguntas
+* Como unir as informações das tabelas?
+* Como obter informações de curso a partir de estudantes?
+* Como realizar consultas bem performáticas com qualificações inseridas?
+* Como garantir que o modelo seja robusto a transações.
 
 
+## Transações
+* Execução no banco de dados.
+* Garante integridade – exemplo de compra de lugares no teatro.
+* Sensação de execução local com isolamento e proteção contra perdas.
+* Conceito de lock.
 
+
+### Locking Protocol
+* Regras que garantem que, mesmo que várias pessoas executem queries ao mesmo tempo, o resultado líquido será o mesmo que teria ocorrido se as mesmas tivessem sido executadas em fila.
+* o lock irá garantir que o objeto consultado não possa ser acessado por meio de outras transações
+* Exclusive Lock e Shared Lock.
+
+
+## Relacionamento
+* Como garantir robustez ao modelo do negócio? Além da robustez de transações -> restrições.
+* O relacionamento entre entidades. Como se relacionam estudantes e cursos?
+* A tabela deve ter consistência interna e os relacionamentos dela com as demais também.
+
+
+## Restrições de Integridade
+* Restrições de chave, de relacionamento e gerais.
+* Restrições de chave: um subconjunto mínimo de campos de uma relação que identifica tupla única.
+* Ou seja, campo(s) definidos como chave devem garantir que a linha selecionada seja única.
+
+
+### Exemplo
+| CPF | Nome  | Curso            |
+| --- | ----- | ---------------- |
+| xxx | João  | Ciência de Dados |
+| yyy | João  | Medicina         |
+| hhh | Pedro | Medicina         |
+
+| Nome  | Sobrenome | Curso            |
+| ----- | --------- | ---------------- |
+| João  | Silva     | Ciência de Dados |
+| João  | Marinho   | Ciência de Dados |
+| Pedro | Guedes    | Ciência de Dados |
+
+
+## Chave Primária
+* Uma determinada tabela pode ter várias chaves = chaves candidatas
+* Chave primária é definida pelo DBA de forma que o SGBD faça as averiguações por meio da mesma.
+* Chave primária bem definida é importante pois suscita a criação de índices o que torna as consultas mais performáticas.
+
+
+## Formas Normais
+* Série de regras que garantem se um BD foi bem projetado
+* Mostra a importância de uma chave primária bem definida
+* Objetivo:
+1. Garantir informação sem redundância
+2. Garantir eficiência na obtenção dos dados
+
+
+### 1ª forma normal
+* Cada linha é uma informação. Não podem existir grupos repetidos ou atributos com mais de um valor.
+* **PESSOAS**: `{ID, NOME, ENDERECO, TELEFONES}`
+
+* **PESSOAS**: `{ID, NOME, ENDERECO}`
+* **TELEFONES**: `{PESSOA_ID, TELEFONE}`
+
+
+### 2ª forma normal
+* Todas as colunas que não participam da chave primária são dependentes de todas as colunas que compõem a chave primária.
+* **ALUNOS_CURSOS**: `{ID_ALUNO, ID_CURSO, NOTA, DESCRICAO_CURSO}`
+
+* **ALUNOS_CURSOS**: `{ID_ALUNO, ID_CURSO, NOTA}`
+* **CURSOS**: `{ID_CURSO, DESCRICAO}`
+
+
+## Restrições Gerais
+* Restrições de negócio, principalmente.
+* Exemplo: inserção de idade.
+* Os modernos SGBD já têm ferramentas que permitem criar tais restrições.
+
+
+## Como lidar com modelos com mais de uma tabela?
+### Chave Estrangeiras
+* Chave primária de outra tabela
+* Essa chave nos permite ligar tabelas diferentes de forma a garantir a unicidade da relação.
+* O nome da chave estrangeira não precisa ser o mesmo da chave primária = o que importa é o conteúdo!
+
+
+### ACID
+* Atomicity, Consistency, Isolation, Durability
+* Conjunto de propriedades em transações de bancos de dados que são importantes para garantir a validade dos dados mesmo que ocorram erros durante o armazenamento ou problemas mais graves no sistema, como crashes ou problemas físicos em um servidor. As propriedades ACID são fundamentais para o processamento de transações em banco de dados.
+
+* **Atomicidade:** garante que cada transação seja tratada como uma entidade única, a qual deve ser executada por completo ou falhar completamente
+* **Consistência:** os dados que são gravados devem sempre ser válidos
+* **Isolamento:** permite deixar o banco de dados no mesmo estado em que ele estaria caso as transações fossem executadas em sequência
+* **Durabilidade:** a propriedade da durabilidade garante que uma transação, uma vez executada (efetivada), permanecerá neste estado mesmo que haja um problema grave no sistema
+
+
+### Cardinalidade
+* **Cardinalidade:** indica quantas ocorrências de uma Entidade participam no mínimo e no máximo do relacionamento.
+
+**Tipos de relacionamento:**
+* Um para um
+* Muitos para um
+* Muitos para muitos
+
+
+* Cardinalidade mínima: define se a relação é obrigatória
+* Cardinalidade máxima: define a quantidade máxima de ocorrências da Entidade que pode participar do Relacionamento
+
+
+## Operando com SQL
+### JOIN, LEFT JOIN, RIGHT JOIN, INNER JOIN
+* Especifica como será feita a junção entre duas tabelas. 
+
+
+### UNION ALL vs. UNION
+* Tabelas de mesma estrutura que serão “empilhadas”.
+* UNION ALL inclui duplicatas, UNION aplica um DISTINCT.
+
+
+## Nested Queries
+* Resultado de uma query anterior pode ser utilizada na atual.
+* Exemplo de uso com `IN`.
+
+
+## ODBC e JDBC
+* Java Database Connectivity – SUM
+* Open Database Connectivity – Microsoft
+* Permite a execução de SQL dentro do banco a partir de aplicações.
+
+
+## Queries
+
+Ambos tem o mesmo resultado:
+
+```sql
+SELECT * FROM payment A
+LEFT JOIN customer B
+ON A.customer_id = B.customer_id;
+
+SELECT * FROM payment A
+LEFT JOIN ( SELECT * FROM customer ) B
+ON A.customer_id = B.customer_id;
+```
+
+
+## Observações e Referências
+* [IEEE](https://www.ieee.org/)
 
 
 
