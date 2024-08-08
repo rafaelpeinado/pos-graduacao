@@ -130,23 +130,23 @@
 
 
 ### Quando Aplicar o Modelo
-- A regressão linear é aplicada quando a variável dependente é quantitativa
-- O objetivo é explicar o comportamento de Y em função de um conjunto de X
-- Estabelece-se uma relação linear entre as variáveis
-  - Regressão linear simples e múltipla
-    - A regressão linear simples contém apenas uma variável explicativa
-    - A regressão linear múltipla contém mais de uma variável explicativa
+- A regressão linear é aplicada quando a **variável dependente é quantitativa**
+  - O objetivo é explicar o comportamento de Y em função de um conjunto de X
+  - Estabelece-se uma relação linear entre as variáveis
+- Regressão linear simples e múltipla
+  - A regressão linear simples contém **apenas uma** variável explicativa
+  - A regressão linear múltipla contém **mais de uma** variável explicativa
 
 
 ### Modelo Geral de Regressão Linear
-Yi = a + b1.X1i + b2.X2i + ... + bk.Xki + ui
+Y~i~ = a + b~1~.X~1i~ + b~2~.X~2i~ + ... + b~k~.X~ki~ + u~i~
 
 - Y é a variável dependente quantitativa
 - a representa a constante (intercepto)
-- bk representam os coeficientes para cada variável explicativa
-- Xk representam as variáveis explicativas do modelo
-- ui representa o termo de erro do modelo (resíduo)
-- k é o número de variáveis explicativas e i refere-se às observações em análise
+- b~k~ representam os coeficientes para cada variável explicativa
+- X~k~ representam as variáveis explicativas do modelo
+- u~i~ representa o termo de erro do modelo (resíduo)
+  - k é o número de variáveis explicativas e i refere-se às observações em análise
 - As variáveis explicativas (X) podem ser métricas ou categóricas
 
 
@@ -157,12 +157,13 @@ Yi = a + b1.X1i + b2.X2i + ... + bk.Xki + ui
 
 
 ### Mínimos Quadrados Ordinários (MQO)
-- O algoritmo estimará os parâmetros α e β do modelo
-
-  - Pode-se definir o resíduo do modelo para dada observação i
-  - Condições para a estimação dos parâmetros do modelo (MQO)
-    1. A somatória dos resíduos deve ser igual a zero
-    2. A somatória dos resíduos ao quadrado é a mínima possível
+- O algoritmo estimará os parâmetros **α** e **β** do modelo
+  - Ŷ~i~ = α + β.X~i~
+- Pode-se definir o resíduo do modelo para dada observação i
+  - u~i~ = Y~i~ - Ŷ~i~
+- Condições para a estimação dos parâmetros do modelo (MQO)
+  1. A somatória dos resíduos deve ser igual a zero
+  2. A somatória dos resíduos ao quadrado é a mínima possível
 
 
 ### Elementos de um Modelo
@@ -176,20 +177,50 @@ Yi = a + b1.X1i + b2.X2i + ... + bk.Xki + ui
 ### Parâmetros do Modelo
 - Interpretação dos parâmetros α e β
   - α é o coeficiente linear, ou seja, o valor de Y caso todas as X=0
-  - Muitas vezes, o α pode ser interpretado como a projeção da reta no eixo Y, uma vez que não encontram-se observações da amostra com todas as variáveis X=0
+    - Muitas vezes, o α pode ser interpretado como a projeção da reta no eixo Y, uma vez que não encontram-se observações da amostra com todas as variáveis X=0
   - β são os coeficientes angulares, ou seja, a inclinação da reta
-  - Na regressão múltipla, os β são interpretados na condição ceteris paribus, ou seja, o efeito daquela X sobre Y mantidas todas as demais variáveis constantes
-  - Destaca-se que a interpretação dos parâmetros do modelo deve ocorrer sem a extrapolação dos dados, isto é, vale dentro do limite de variação das variáveis
+    - Na regressão múltipla, os β são interpretados na condição ceteris paribus, ou seja, o efeito daquela X sobre Y mantidas todas as demais variáveis constantes
+    - Destaca-se que a interpretação dos parâmetros do modelo deve ocorrer sem a extrapolação dos dados, isto é, vale dentro do limite de variação das variáveis
 
 ### Teste F (ANOVA)
+- No exemplo: 
+  - F-statistic: 36.30
+  - Prob (F-statistic): 0.000314
+
 - Avalia a significância geral do modelo de regressão, ou seja, se pelo menos um dos β estimados é estatisticamente diferente de zero
+  - ![Teste F](./assets/teste-f.png)
+
   - H0: β1 = β2 = ... = βk = 0
   - H1: existe pelo menos um βj ≠ 0
 - Normalmente, adota-se o nível de significância de 5% para o teste
-- Se o p-valor do teste F < 0.05, rejeita-se H0
+  - Se o p-valor do teste F < 0.05, rejeita-se H0
+
+
+![SQT = SQR + SQU](./assets/quadrados-totais-regressao-residuos.png)
+
 
 ### Teste t
-- Aval
+- Avalia a significância individual dos parâmetros estimados
+  - ![Teste t](./assets/teste-t.png)
+
+
+### Coeficiente de explicação (R^2^)
+- **R-squared: 0.819**
+- O R^2^ apresenta o poder explicativo do modelo, ou seja, o percentual da variabilidade de Y que é explicado pela variação das variáveis X
+  - ![Coeficiente de explicação](./assets/coeficiente-de-explicacao.png) 
+- **Na regressão simples, o R² pode ser obtido pelo coef_correl²**
+
+
+### Intervalos de confiança
+- Para o nível de confiança escolhido, é o intervalo de valores que contém o verdadeiro parâmetro populacional
+  - ![Intervalos de confiança](./assets/intervalo-de-confianca.png) 
+
+
+# Técnicas de Machine Learning II
+## Modelos Lineares de Regressão Simples e Múltipla
+### Múltipla
+- tempo = 8,15 + 0,79 * distancia + 8,29 * semaforos
+- tempo = α + β~1~ + β~2~
 
 
 
