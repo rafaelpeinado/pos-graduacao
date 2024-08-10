@@ -223,4 +223,5 @@ Y~i~ = a + b~1~.X~1i~ + b~2~.X~2i~ + ... + b~k~.X~ki~ + u~i~
 - tempo = α + β~1~ + β~2~
 
 
+# Técnicas de Machine Learning III
 
