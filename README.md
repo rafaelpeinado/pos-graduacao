@@ -21,8 +21,9 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Engenharia de Dados - Jeronymo Marcondes Pinto](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/engenharia-de-dados)
 * [Aula: Técnicas de Machine Learning - Wilson Tarantin Junior](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/tecnicas-de-machine-learning)
 * [Aula: Mindset Canvas e Plano de Negócio - Eduardo Pinto Vilas Boas](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/mindset-canvas-e-plano-de-negocio)
-* [Aula: Noções gerais sobre o desenvolvimento do TCC - Marcos Milan](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/nocoes-gerais-sobre-o-desenvolvimento-do-tcc)
-* [Aula: Gestão de Conflitos - Denise De Moura](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gestao-de-conflitos)
+* [Aula: Noções Gerais sobre o Desenvolvimento do TCC - Marcos Milan](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/nocoes-gerais-sobre-o-desenvolvimento-do-tcc)
+* [Aula: Gestão de Conflitos - Denise de Moura](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gestao-de-conflitos)
+* [Aula: Blockchain e Criptomoedas - Fabio Miguel Junges](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gestao-de-conflitos)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
