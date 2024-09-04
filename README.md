@@ -342,3 +342,135 @@ Escrever na blockchain do Bitcoin é melhor do que escrever na pedra
   - [BitBonkers](https://bitbonkers.netlify.app/)
   - [BitInfoCharts](https://bitinfocharts.com/bitcoin)
   - [Bit Address](https://www.bitaddress.org/bitaddress.org-v3.3.0-SHA256-dec17c07685e1870960903d8f58090475b25af946fe95a734f88408cef4aa194.html)
+
+
+# Blockchain e Criptomoedas II
+- Vitalik Buterin - Ethereum
+  - Smart Contracts: regras condicionantes para operações on-chain
+  - Tokenização: representação de ativos de forma digital
+
+
+## Blockchain
+### Aplicações potenciais
+- **Contratos Inteligentes:** codificação e execução automática de determinadas regras de negócio previamente ajustadas entre as partes, reduzindo a necessidade de um intermediário garantidor
+- **Tokenização de Ativos:** Token é a representação digital única de um ativo, devidamente registrado em uma blockchain
+
+
+### Possíveis Implementações
+
+![Possíveis implementações](./assets/possiveis-implementacoes.png)
+
+
+### Layer 1, 2, 3, Parachains
+
+![Layer 1](./assets/layer-1.png)
+
+![Layer 2](./assets/layer-2.png)
+
+![Layer 3](./assets/layer-3.png)
+
+![Parachains](./assets/parachains.png)
+
+
+
+### General Categorization
+- **Registros:** armazenamento de informações estáticas
+  - **1 - Registros estáticos:** bases distribuídas para armazenar dados estáticos
+    - Registro de terras, nascimentos, posse
+    - Registro acadêmicos e de patentes
+    - Origem de alimentos
+  - **2 - Identidade:** bases distribuídas com informações sobre identidade de pessoas, coisas ou eventos
+    - Votação
+    - Infrações
+    - Identidade pessoal
+    - Certidões
+  - **3 - Contratos Inteligentes:** regras de negócio pré-definidas com cláusulas de auto-execução
+    - Indústria
+    - Automatização de seguros
+    - Aluguéis
+- **Transações:** informações sobre transações financeiras
+  - **4 - Registros Dinâmicos:** bases distribuídas que registram o status de posse ou tracking de ativos ou coisas na rede
+    - Tokenização de ativos
+    - Fracionamento de investimentos
+    - Supply chain
+  - **5 - Pagamentos:** bases distribuídas que registram transações financeiras de pagamentos entre os participantes da rede
+    - Pagamentos internacionais
+    - Sistemas de pagamento
+  - **6 - Outros:** combinação das aplicações anteriores e outros casos específicos de uso em setores e combinados com outras tecnologias
+    - ICO
+    - Integração com IoT
+    - BaaS (Blockchain as a Service)
+
+- Programabilidade do dinheiro, ou das diferentes formas de valor
+
+
+- **Off-chain:** no mercado tradicional (off-chain) que conhecemos, as transações ocorrem utilizando os meios de pagamento e dinheiro que estamos habituados a operar
+  - Moedas
+  - Commodities
+  - Stocks (ações)
+  - Créditos de carbono
+  - Real estate
+  - Bonds
+  - Arte
+- **On-chain:** no mercado on-chain é necessários que tenhamos as operações baseadas em um dinheiro também digital (tokenizado em blockchain)
+  - Tokenized assets
+  - Global trade on the blockchain
+  - Token fungível
+  - Token não fungível (NFT)
+- A sociedade já vivenciou várias transições monetárias ao longo do tempo:
+  - Do **ouro** para o **papel moeda**
+  - Do **papel moeda** para **cheque, cartão**
+  - Agora mais recentemente para **carteiras digitais**
+
+
+* **Off-Ramp:** estamos operando via crypto e queremos ir para a dimensão tradicional (FIAT)
+* **On-Ramp:** Sair do dinheiro tradicional para crypto
+
+
+
+![Brasil e o Banco Central](./assets/brasil-e-o-banco-central.png)
+
+
+![Pix e DREX](./assets/pix-e-drex.png)
+
+
+![Delivery vs Payments (DvP)](./assets/delivery-vs-payment.png)
+
+
+![Brasil e a CVM](./assets/brasil-e-a-cvm.png)
+
+
+### Tokenização de ativos
+- **Originação:** fundos de investimento, empresas de crowdfunding, escritórios jurídicos (ativos judiciais), royalties musicais, recebíveis de qualquer naturaza, crédito em agro, mercado imobiliários, etc. Ex: Farmtech, AgFood, Osten, LendMe, netSpaces
+- **Estruturação:** aspectos jurídicos e de criação/estruturação da oferta, securitização, segregação patrimonial, criação de CRA, CRI, etc, registro em B3/CETIP
+- **Tokenização:** tecnologia de tokenização, custódia, marketplace para mercados primário e secundário, on ramp/off ramp, smart contracts, pools de liquidez, integração com DeFi, onboarding de investidores, KYC/AML, aspectos técnicos da oferta
+- **Distribuição:** distribuição dos ativos tokenizados, base de investidores, plataforma de divulgação, clientes/mercado
+
+
+
+### Token Não Fungíveis
+- "Um token não fungível serve para garantir que determinado item é original. Nesse sentido, se você comprar algo com NFT, você tem a garantia de que aquele arquivo é único. É a chave completamente única que garante a autenticidade do arquivo."
+
+
+
+### DeFi
+
+![Ethereum's DeFi](./assets/ethereums-defi.png)
+
+
+
+
+
+
+
+
+## Observações e Complementos
+- Linguagem de programação para Smart Contracts: Solidity
+- Ethereum para testes
+- [Metamask](https://metamask.io/)
+- [Rarum](https://rarum.io/)
+
+
+
+
+
