@@ -24,6 +24,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Noções Gerais sobre o Desenvolvimento do TCC - Marcos Milan](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/nocoes-gerais-sobre-o-desenvolvimento-do-tcc)
 * [Aula: Gestão de Conflitos - Denise de Moura](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gestao-de-conflitos)
 * [Aula: Blockchain e Criptomoedas - Fabio Miguel Junges](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gestao-de-conflitos)
+* [Aula: Fundamentos de Redação Técnico-Científica - José Eurico Possebon Cyrino](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/fundamentos-de-redacao-tecnico-cientifico)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
