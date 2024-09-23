@@ -160,7 +160,7 @@
 - **Lei de Acesso à Informação (2011):**
   - Art. 31. O tratamento das informações pessoais deve ser feito de forma transparente e **com respeito à intimidade, vida privada**, honra e imagem das pessoas, bem como às liberdades e garantias individuais.
 - **Marco Civil da Internet (2014):**
-  - **Contexto >** revelações de **Edward Snowden** sobre Agências de Segurança Nacional americana (NSA) interceptar praticamente qualquer tipo de informação de forma automática e sem controle prévio
+  - **Contexto >** revelações de **Edward Snowden** sobre Agências de Segurança Nacional Americana (NSA) interceptar praticamente qualquer tipo de informação de forma automática e sem controle prévio
   - Brasil: **2.3 bilhões** de telefonemas e mensagens de e-mail **espionadas**, e a Presidente da época, Dilma Rousseff também teve comunicações violadas.
   - Art. 2º A disciplina do uso da internet no Brasil tem como fundamento o respeito à liberdade de expressão bem como: (...)
     - II - **os direitos humanos, o desenvolvimento da personalidade** e o exercício da cidadania em meios digitais;
@@ -291,6 +291,209 @@
 5. Segurança de Host/Devices
 6. Segurança da Aplicação
 7. Segurança de Dados
+
+
+# Legislação no Ambiente Digital (LGPD) II
+## Mudança de cultura organizacional
+- **LGPD:** nova forma de lidar com as informações relacionadas às pessoas físicas, de titularidade dessas pessoas
+- Momento de **reflexão** e **ajuste** sobre a forma como lidamos com as informações sobre as pessoas
+- "Uso sustentável de dados pessoas" (Daniela Cabella, 2020)
+
+- **Evitar:**
+  - Discriminação ilícita ou abusiva
+  - Fraudes e outros crimes
+- **Promover:**
+  - Desenvolvimento econômico e tecnológico e inovação
+  - Respeito aos direitos humanos
+- **Impacto sobre:**
+  - Setores público e privado
+  - Prestação de serviços e criação de produtos
+  - Atividades, processos e procedimentos
+  - Priorização do fluxo de trabalho
+  - Comunicação
+  - Relações contratuais
+  - Práticas do dia-a-dia
+
+- [A LGPD em um giro](https://www.serpro.gov.br/lgpd/menu/arquivos/infografico-lgpd-em-um-giro/@@images/9185dd24-5b70-481e-88b0-7064d14553e5.jpeg)
+
+
+## Cenários de uso e aplicações da LGPD
+- "Na mesma velocidade da evolução da rede, em virtude do relativo anonimato proporcionado pela Internet, crescem os crimes, as reclamações devido a infrações ao Código de Defesa do Consumidor, as infrações à propriedade intelectual, marcas e patentes, entre outras". (PINHEIRO, 2021, p. 72)
+
+### Lei nº 12965/2014, art. 11
+- Estabelece princípios, garantias, direitos e deveres para o uso da Internet no Brasil
+  - Art. 11. Em qualquer operação de coleta, armazenamento, guarda e tratamento de registros, de dados pessoais ou de comunicações por provedores de conexão e de aplicações de internet em que pelo menos um desses atos ocorra em território nacional, deverão ser obrigatoriamente respeitados a legislação brasileira e os direitos à privacidade, à proteção dos dados pessoas e ao sigilo das comunicações privadas e dos registros.
+
+### Direito à informação: desdobramentos comerciais e responsabilidade civil
+- **De informar** - Ativo
+- **De ser informado** - Passivo
+- **De não receber informação** - Ativo e passivo e Proteção da privacidade
+
+
+### Segmentos mais afetados pelo art. 11
+- Quanto a aplicação dos princípios da neutralidade, liberdade de expressão e privacidade de dados.
+  - Telecomunicações
+  - Provedores de internet
+  - Provedores de Aplicação em Geral
+  - Portais de Conteúdo
+  - Mídias Sociais
+  - Serviços de Cloud Computing
+  - Serviços de monitoramento de navegação de usuários
+  - Serviços de métricas para marketing digital
+  - Empresas com Big Data
+
+
+### Fique atento!
+- **Código Civil:** Responsabilidade por dano moral ou material
+- **Marco Civil da Internet:** Liberdade de expressão; proteção da privacidade; neutralidade; guarda de provas; proteção de menores; penalidade etc
+- **Código de Defesa do Consumidor:** comprar presenciais e online
+- **LGPD:** Proteção da privacidade; proteção de dados; penalidades
+
+
+### Princípios do tratamento de dados (art 6º LGPD)
+- Boa-fé
+- Finalidade
+- Adequação
+- Necessidade
+- Livre acesso
+- Qualidade dos dados
+- Transparência
+- Segurança
+- Prevenção
+- Não discriminação
+- Responsabilização
+- Prestação de Contas
+
+- ![Moral - Ética - Caráter](./assets/)
+
+
+### Compliance Digital
+#### Plano de voo
+- **Diagnóstico** para identificar riscos existentes permitindo assim estabelecer um plano de ação para suas correções
+  - Como se faz isso?
+    - Entrevistas com as áreas de negócio
+    - Entrevistas com área de TI
+    - Geração de fluxo de dados
+    - Geração de relatório de tratamento de dados
+    - Geração de relatório de riscos e recomendações
+- **Implementação** do plano de ação priorizando-se por níveis de risco, estabelecendo controles ambiente organizacional para adequação à LGPD
+  - Tipos de controle:
+    - mudanças de processos
+    - treinamentos
+    - geração de documentos (políticas, procedimentos, formulários, entre outros) e
+    - implantação de ferramentas
+- **Monitoramento** validar o estado atual da organização após a execução do seu plano de ação de adequação à LGPD
+- **Diagnóstico de Vulnerabilidade e Engenharia Social**
+  - vulnerabilidades tecnológicas
+  - vulnerabilidade de pessoas
+  - ameaças cibernéticas
+  - riscos operacionais à organização
+- **Análise de Maturidade de Segurança de Informação e Privacidade**
+  - demonstrar nível de maturidade de segurança de informação e privacidade
+  - comparar com conforme padrões de mercado
+  - planejar ações de melhoria
+- **Treinamento de segurança e privacidade**
+  - promover aos colaboradores da organização conhecimento sobre a segurança da informação e a privacidade
+
+
+## Segurança da Informação
+### 6 Pilares da Segurança da Informação
+- Tradicionalmente três pilares (CID):
+  - confidencialidade
+  - integridade
+  - disponibilidade
+- Hoje mais três:
+  - autenticidade
+  - irretratabilidade (ou não repúdio)
+  - conformidade
+
+### Finalidade
+- Garantir que a **informação** seja acessada somente pelos responsáveis diretos, impedindo que seja divulgado para um usuário, entidade ou processo não autorizados
+
+- De acordo com o **2020 Webroot Threat Report**, 93,6% dos malwares analisados eram considerados polimórficos, ou seja possui a habilidade de constantemente mudar seu código para fugir de mecanismos de detecção
+
+
+### Procedimentos de segurança da informação
+- Política de segurança da informação
+- Automatização de backups
+- Implantação da gestão de riscos de TI
+- Utilização de ferramentas de criptografia para senhas
+- Configuração de firewalls
+- Instalação e atualização constante de software antivírus
+- Cloud Computing
+
+
+## IA Generativa Ativa
+- "A **inovação** não é um evento isolado, mas será enraizado em **estruturas sociais e culturais** mais amplas que **afetam sua adoção** e difusão." (Pierre Bourdieu)
+
+### Breve definição de IA
+- A Inteligência Artificial é a **simulação de habilidades humanas** por máquinas
+- Utiliza algoritmos e dados para realizar tarefas como raciocínio, reconhecimento de padrões e tomada de decisões
+- Permite que as **máquinas atuem** (~~pensem~~) de forma semelhante aos humanos
+
+
+### Inteligência Artificial Generativa
+- ChatGPT- GPT 4
+- Gemini
+- GEMMA
+- Llama 2
+- Midjourney
+- DALL.E 3
+- SORA
+
+
+### GPT - Generative Pre-trained Transformer
+- **Generative:** capacidade de gerar dados. No contexto de GPT, gerar sequências de texto
+- **Pre-trained:** previamente treinado em enormes conjuntos de dados antes de ser afinado para tarefas específicas
+- **Transformer:** capacidade de lidar com sequências de dados, como texto, tornando-os ideais para tarefas de processamento de linguagem natural
+
+
+### Objetivo do GPT
+- Projetado para "**entender**" e **gerar** texto de maneira coerente e contextual
+- **Como funciona**: o GPT **analisa o contexto das palavras** em uma frase para gerar respostas ou completar textos
+- Por exemplo, se você fornecer ao modelo a frase "O céu é...", ele pode completar com "azul" com base no treinamento e no contexto fornecido
+
+
+### IA Generativa
+- IA Generativa **"aprendem"** com grande volumes de dados, absorvendo **padrões, estilos e informações**
+- Em seguida, **são capazes de gerar** textos, imagens, música e muito mais, **muitas vezes sem** necessidade de **intervenção humana** após o treinamento inicial
+
+- Treinado com **dados**
+- Reconhece **contexto**
+- Resposta **provável** para o contexto
+
+
+### Diálogo Multimodal
+- Interação ou diálogo com **uso simultâneo** de fala, gestos, texto, processamento de imagens, etc.
+
+
+### Processamento Linguagem Natural
+- Probabilidade
+- Limites das IA's
+- Ambiguidade
+- Contexto
+- Alucinações
+- Preguiça
+- Eficiência Operacional: **automatizar tarefas repetitivas e demoradas**
+  - Análise de documentos
+  - Acelerar os processos interno
+  - Lidar com maior volume de ações
+  - Otimizar recursos disponíveis
+- Melhoria na Detecção de Irregularidades: **identificação de padrões** de comportamento com uso de IA e aprendizado de máquina
+  - Ex.: detectar anomalias que podem indicar ações massivas e litigância de má-fé
+- **Suporte** à Decisão em Sentenças
+  - **otimização do fluxo documental**
+  - automação da análise de documentos
+  - geração de minutas e relatórios baseados nos autos, legislação e nos precedentes dos Tribunais
+- Tomada de **decisão apoiada** por dados: **Ampliação da Tomada de Decisões com Base em Dados**
+  - Permite **priorizar ações** e recursos de maneira mais estratégica, focando em **áreas de maior risco** ou **maior impacto** potencial
+- Melhora da **Comunicação com as Partes**: Sistemas de Comunicação mais eficientes:
+  - assistentes virtuais fornecem informações em **tempo real** dos processos e **prazos** legais judiciais, melhorando acesso à informação
+
+
+- Como isso tudo afeta a proteção de dados pessoais?
+
+
 
 
 
