@@ -26,6 +26,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Blockchain e Criptomoedas - Fabio Miguel Junges](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gestao-de-conflitos)
 * [Aula: Fundamentos de Redação Técnico-Científica - José Eurico Possebon Cyrino](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/fundamentos-de-redacao-tecnico-cientifico)
 * [Aula: Legislação no Ambiente Digital (LGPD) - Ana Carla Bliacheriene](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/legislação-no-ambiente-digital-lgpd)
+* [Aula: Inteligência Emocional - Gilberto Tadeu Shinyashiki](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/inteligencia-emocional)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
