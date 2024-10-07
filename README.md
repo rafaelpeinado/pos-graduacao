@@ -17,15 +17,15 @@
 
 
 ## Observabilidade vs Monitoramento
-| Característica  | Monitoramento                               | Observabilidade                                        |
-| :-------------- | :------------------------------------------ | :----------------------------------------------------- |
-| Foco            | Métricas e evento predefinidos              | Diagnóstico e entendimento do sistema                  |
-| Objetivo        | Detectar anomalias e falhas conhecidas      | Explorar e diagnosticar comportamentos desconhecidos   |
-| Coleta de Dados | Métricas simples e limites                  | Logs, métricas e tracing (dados ricos e detalhados)    |
-| Alertas         | Baseados em limiares predefinidos           | Suporte à exploração e investigação de falhas          |
-| Visão           | Limitada ao que foi configurado             | Ampla, cobrindo vários tipos de dados                  |
-| Abordagem       | Proativa (monitora e alerta)                | Reativa e exploratória (permite investigação profunda) |
-| Adequado para   | Problemas conhecidos e limiares previsíveis | Problemas complexos e emergentes                       |
+| **Característica**  | **Monitoramento**                           | **Observabilidade**                                    |
+| :------------------ | :------------------------------------------ | :----------------------------------------------------- |
+| **Foco**            | Métricas e evento predefinidos              | Diagnóstico e entendimento do sistema                  |
+| **Objetivo**        | Detectar anomalias e falhas conhecidas      | Explorar e diagnosticar comportamentos desconhecidos   |
+| **Coleta de Dados** | Métricas simples e limites                  | Logs, métricas e tracing (dados ricos e detalhados)    |
+| **Alertas**         | Baseados em limiares predefinidos           | Suporte à exploração e investigação de falhas          |
+| **Visão**           | Limitada ao que foi configurado             | Ampla, cobrindo vários tipos de dados                  |
+| **Abordagem**       | Proativa (monitora e alerta)                | Reativa e exploratória (permite investigação profunda) |
+| **Adequado para**   | Problemas conhecidos e limiares previsíveis | Problemas complexos e emergentes                       |
 
 
 ### Exemplo de Monitoramento
@@ -270,11 +270,13 @@ Os logs geralmente incluem informações como:
 
 
 
+# Observabilidade e Monitoramento II
+- [Comandos para executar o Elastic Stack ELK e a Aplicação](./observabilidade-monitoramento/README.md)
+- [Kibana](http://localhost:5601/app/home) -> Observability 
+- [Aplicação](http://localhost:3000/)
 
 
-
-
-
+## Observações e Referências
 
 
 
