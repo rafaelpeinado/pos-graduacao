@@ -28,6 +28,7 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Legislação no Ambiente Digital (LGPD) - Ana Carla Bliacheriene](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/legislação-no-ambiente-digital-lgpd)
 * [Aula: Inteligência Emocional - Gilberto Tadeu Shinyashiki](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/inteligencia-emocional)
 * [Aula: Observabilidade e Monitoramento - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/observabilidade-e-monitoramento)
+* [Aula: Liderança em Projetos de Tecnologia - Adriana Cristina Ferreira Caldana](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/lideranca-em-projetos-de-tecnologia)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
