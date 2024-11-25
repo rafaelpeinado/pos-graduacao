@@ -29,6 +29,8 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Inteligência Emocional - Gilberto Tadeu Shinyashiki](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/inteligencia-emocional)
 * [Aula: Observabilidade e Monitoramento - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/observabilidade-e-monitoramento)
 * [Aula: Liderança em Projetos de Tecnologia - Adriana Cristina Ferreira Caldana](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/lideranca-em-projetos-de-tecnologia)
+* [Aula: Arquitetura Limpa (Clean Architecture) - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/arquitetura-limpa-clean-architecture)
+* [Aula: Paradigmas de Desenvolvimento de Software - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/paradigmas-de-desenvolvimento-de-software)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
