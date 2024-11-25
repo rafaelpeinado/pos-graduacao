@@ -81,8 +81,10 @@
 - __init__.py: no Python isso significa que agora essa pasta é um módulo e que pode ser usado em outros lugares
 
 
-## Atalhos
-- **ctrl + K + C:** comenta um corpo de texto
 
+# Arquitetura Limpa (Clean Architecture) II
+
+# Atalhos
+- **ctrl + K + C:** comenta um corpo de texto
 
 

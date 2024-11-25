@@ -3,16 +3,16 @@ from uuid import UUID
 from domain.user.user_entity import User
 from domain.user.user_repository_interface import UserRepositoryInterface
 from sqlalchemy.orm.session import Session
-
 from infrastructure.user.sqlalchemy.user_model import UserModel
 
-
 class UserRepository(UserRepositoryInterface):
+    
+    session: Session
+
     def __init__(self, session: Session):
-        self.session: Session = session
+        self.session = session
 
     def add_user(self, user: User) -> None:
-
         user_model = UserModel(id=user.id, name=user.name)
 
         self.session.add(user_model)
@@ -21,14 +21,14 @@ class UserRepository(UserRepositoryInterface):
         return None
 
     def find_user(self, user_id: UUID) -> User:
-
         user_in_db: UserModel = self.session.query(UserModel).get(user_id)
-        user = User(id=user_in_db.id, name=user_in_db.name)
 
-        return user
+        if not user_in_db:
+            raise Exception(f"unable to find user with id {user_id}")
 
+        return User(id=user_in_db.id, name=user_in_db.name)
+    
     def list_users(self) -> List[User]:
-
         users_in_db = self.session.query(UserModel).all()
 
         users = []
@@ -37,7 +37,7 @@ class UserRepository(UserRepositoryInterface):
             users.append(User(id=user_in_db.id, name=user_in_db.name))
 
         return users
-
+    
     def update_user(self, user: User) -> None:
 
         self.session.query(UserModel).filter(UserModel.id == user.id).update(
@@ -46,3 +46,6 @@ class UserRepository(UserRepositoryInterface):
         self.session.commit()
 
         return None
+    
+
+
