@@ -90,3 +90,12 @@
 [Função Lambda](./pratica/aula/funcional/lambda.py): dobro = lambda ENTRADA: SAÍDA
 [List Comprehension](./pratica/aula/funcional/puras-alta-ordem.py): [funcao(x) for x in lista]
 
+
+
+# Paradigmas de Desenvolvimento de Software II
+[Atributo Privado no Python](./pratica/aula/orientada-objeto/encapsulamento.py): self.__saldo_inicial = saldo_inicial 
+[Executar prolog](./pratica/aula/logico/logicas.pl):
+- swipl logicas.pl
+
+
+
