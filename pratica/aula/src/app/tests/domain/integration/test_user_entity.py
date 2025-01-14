@@ -1,6 +1,6 @@
 from uuid import uuid4
 from app.domain.task.task_entity import Task
-from app.domain.user.user_entity import User
+from domain.user.user_entity import User
 
 
 class TestUserWithTasks:

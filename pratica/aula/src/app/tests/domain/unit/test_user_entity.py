@@ -1,6 +1,6 @@
 from uuid import uuid4
 import pytest
-from app.domain.user.user_entity import User
+from domain.user.user_entity import User
 
 class TestUser:
 
