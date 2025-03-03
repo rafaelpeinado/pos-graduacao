@@ -117,14 +117,95 @@
 
 
 
+# NoSQL x SQL II
+## Comparação SQL x NoSQL, Arquiteturas Analíticas e Hand's On
+### Vantagens e desvantagens: SQL
+- **Vantagens do SQL:** SQL oferece forte consistência e integridade de dados, sendo ideal para aplicações que requerem rigidez e confiabilidade
+1. Estrutura pré-definida
+2. Consistência de Dados
+3. Consultas Complexas
+4. Transações ACID
+5. Relatórios e Análises
+6. Robustez e Suporte
+
+- **Desvantagens do SQL:** menos flexível e especializado, mais difícil e muitas vezes com maior custo para escalar em cenários de grandes volumes de dados
+
+
+### Vantagens e desvantagens: NoSQL
+- **Vantagens do NoSQL:** NoSQL oferece escalabilidade e flexibilidade, permitindo lidar com grandes volumes de dados e estruturas variáveis
+1. Flexibilidade de Esquema
+2. Grandes Volumes de Dados Não Relacionais
+3. Escalabilidade Horizontal
+4. Desempenho
+5. Modelo de Dados Específicos
+
+- **Desvantagens do SQL:** NoSQL pode sacrificar a consistência em alguns casos, o que pode ser uma preocupação para aplicações que requerem dados sempre precisos
+
+
+### O que é um Banco de Dados Analítico?
+- Banco de dados analítico é projetado para **consultas e análises complexas**
+- Ele armazena **grandes volumes de dados** históricos para análise de tendências
+- Ideal para **relatórios de BI** e **tomada de decisões** estratégicas
+- Usa técnicas de **processamento paralelo** para desempenho otimizado
+- Diferente de bancos transacionais, foca na **leitura em vez de escrita**
+
+
+### Data Warehouse vs Big Data
+- Um **Data Warehouse** é um sistema para relatórios e análise de dados, geralmente baseado em banco de dados relacional analítico
+- **Big Data** refere-se a grandes volumes de dados estruturados, semiestruturados e não estruturados
+- Data Warehouse são otimizadas para **consultas complexas**, enquanto Big Data se concentra em análise de dados em larga escala
+- Ambos são essenciais para a **tomada de decisões** informadas nas empresas
+
+![Data Warehouse vs Big Data](./assets/data-warehouse-big-data.png)
+
+
+- **Big Data:** "Nascido em 1997, o termo Big Data quer dizer ativos de informação de alto volume, alta velocidade e/ou de alta variedade que exigem formas inovadoras e econômicas de processamento de informações que permitem insights aprimorados, tomada de decisões e automação de processos". Gartner, 2021
+
+![Hadoop](./assets/hadoop.png)
+
+
+### Arquitetura de dados analíticos
+![Arquitetura de dados analíticos](./assets/arquitetura-dados-analiticos.png)
+
+
+### Tipos de Arquitetura de dados analíticos
+1. **Lambda**
+- 2 caminhos de ingestão dos dados, 1 Stream e 1 Batch. Dessa forma, é possível processar os dados mais pesados em uma camada preparada, enquanto os dados de real time passam por uma outra camada, que faz as interceptações necessárias para enriquecimento e agregações conforme necessidade
+
+2. Kappa
+- Essa arquitetura tem propósitos parecidos com a Arquitetura Lambda, mas com a diferença que os dados passam por um único ponto Stream. Essa simplificação resolve o problema de duplicidade e complexidade de gerenciamento, além de facilitar a rastreabilidade das informações em todas as suas etapas e transformações.
+
+
+### Tipos ETL x ELT x Ingestão de Dados
+
+![ETL x ELT](./assets/etl-elt.png)
+
+
+### Soluções de Ingestão/Orquestração de dados
+
+![Soluções de Ingestão/Orquestração de dados](./assets/solucoes-ingestao-orquestracao-dados.png)
 
 
 
+### Design Patterns de arquiteturas de dados modernos
+- Lakehouse
+- Data Mesh
+
+
+#### Design Patterns: Lakehouse
+
+![Lakehouse](./assets/lakehouse.png)
 
 
 
+### Design Patterns: Data Mesh
+
+![Data Mesh](./assets/data-mesh.png)
 
 
-
+### Organização de um Data Lake: Medallion Architecture
+- **Bronze (Ingestão raw e Histórica):** dados históricos completos e granulares, sem nenhuma transformação. Normalmente acessado apenas por Data Engineer
+- **Silver (Filtrado, limpo, enriquecido):** dados limpos, selecionados e preparados para uso. Muito utilizado para Data Science e Data Engineer
+- **Gold (Dados confiáveis, Agregações em nível de negócios):** Informação, dados confiáveis e já modelados para consumo conforme linguagem dos negócios. Mais utilizado por Data Analysts e Data Stewards
 
 
