@@ -135,5 +135,9 @@
 - [Try RabbitMQ](https://tryrabbitmq.com/)
 
 
+# Gerenciamento e Estruturas de Fila II
+- [Kafka Visualization](https://softwaremill.com/kafka-visualisation/)
+
+
 
 
