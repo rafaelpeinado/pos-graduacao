@@ -34,6 +34,9 @@ Todas as anotações e direcionamentos de projetos da pós-graduação estarão 
 * [Aula: Gerenciamento de Testes (TDD) - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gerenciamento-de-testes-tdd)
 * [Aula: Domain Driven Design (DDD) - Guilherme Bezerra de Lima](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/domain-driven-design-ddd)
 * [Aula: Padrões de Projetos (Design Patterns) - Rosana Teresinha Vaccare Braga](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/padroes-de-projetos-design-patterns)
+* [Aula: NoSQL x SQL - Marcelo Cesar Maciel Leite](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/nosql-sql)
+* [Aula: Gerenciamento e Estruturas de Filas - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gerenciamento-e-estruturas-de-filas)
+* [Aula: Gerenciamento e Estruturação de API's - Helder Prado Santos](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/gerenciamento-estruturacao-apis)
 
 #### Palestras
 * [Palestra: Blockchain e Criptomoedas - Jó Ueyama](https://github.com/rafaelpeinado/pos-graduacao/tree/esalq/user-experience-ux)
